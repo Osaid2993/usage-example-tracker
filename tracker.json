@@ -4317,7 +4317,7 @@
       "category": "Sprites",
       "status": "available",
       "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/543",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/548",
       "createdAt": "auto-scraped"
     },
     {
@@ -6257,7 +6257,7 @@
       "category": "Networking",
       "status": "merged",
       "claimedBy": "huyhuynh2319",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/172",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/303",
       "createdAt": "auto-scraped"
     },
     {
@@ -7849,7 +7849,1359 @@
       "claimedBy": "paavan001",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/637",
       "createdAt": "2026-08-05T03:42:08.664Z"
+    },
+    {
+      "functionName": "music_paused",
+      "category": "Audio",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "music_valid",
+      "category": "Audio",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "main",
+      "category": "Audio",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "fade_all_sound_effects_out",
+      "category": "Audio",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sound_effect_valid",
+      "category": "Audio",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "point_in_window",
+      "category": "Camera",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "rect_in_window",
+      "category": "Camera",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "window_area",
+      "category": "Camera",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_azure",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_beige",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_bisque",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_blanched_almond",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_burly_wood",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_chocolate",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "color_monash_blue",
+      "category": "Color",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "circle_quad_intersect",
+      "category": "Geometry",
+      "status": "available",
+      "description": "This example demonstrates the use of the `CircleQuadIntersect` function in SplashKit.",
+      "claimedBy": "Samwong077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/445"
+    },
+    {
+      "functionName": "closest_point_on_line_from_circle",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "closest_point_on_triangle_from_circle",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "distant_point_on_circle",
+      "category": "Geometry",
+      "status": "merged",
+      "description": "Added a new usage example for the distant_point_on_circle function in the Geometry category.",
+      "claimedBy": "ekam313",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/454"
+    },
+    {
+      "functionName": "distant_point_on_circle_heading",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "ray_circle_intersect_distance",
+      "category": "Geometry",
+      "status": "in_review",
+      "description": "I added usage examples for the function ray_circle_intersect_distance in different languages like C++, C#, Python and also included OOP version.",
+      "claimedBy": "anandika-nair",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/335"
+    },
+    {
+      "functionName": "tangent_points",
+      "category": "Geometry",
+      "status": "available",
+      "description": "This pull request introduces Program Idea 1: Calculate and display the two tangent points from an external point to a circle. The program has been implemented in C++, Python, C# OOP, and C# Top-Level ",
+      "claimedBy": "Triet-coder",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/447"
+    },
+    {
+      "functionName": "normal",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "draw_flower",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "get_point",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "quad_from",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "quad_ray_intersection",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "quads_intersect",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_quad_point",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "intersection",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "rectangle_circle_intersect",
+      "category": "Geometry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "rectangle_ray_intersection",
+      "category": "Geometry",
+      "status": "in_review",
+      "description": "Splashkit Function: `RectangleRayIntersection`",
+      "claimedBy": "rachelpatrao",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/748"
+    },
+    {
+      "functionName": "triangle_quad_intersect",
+      "category": "Geometry",
+      "status": "in_review",
+      "description": "This pull request adds a new SplashKit usage example for the `triangle_quad_intersect` function in the Geometry category.",
+      "claimedBy": "jasveena15",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/826"
+    },
+    {
+      "functionName": "triangle_ray_intersection",
+      "category": "Geometry",
+      "status": "in_review",
+      "description": "This pull request adds a new SplashKit usage example for the `triangle_ray_intersection` function in the Geometry category.",
+      "claimedBy": "jasveena15",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/830"
+    },
+    {
+      "functionName": "mouse_position_vector",
+      "category": "Input",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "draw_collected_text",
+      "category": "Input",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "add_column_relative",
+      "category": "Interface",
+      "status": "available",
+      "description": "Added new usage examples for the add_column_relative and add_column functions in SplashKit, demonstrating how to display columns with increasing percentage widths. Examples include C++, C# (top-level ",
+      "claimedBy": "Triet-coder",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/536"
+    },
+    {
+      "functionName": "open_popup",
+      "category": "Interface",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_interface_colors_auto",
+      "category": "Interface",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_interface_root_text_color",
+      "category": "Interface",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "dec_to_ipv4",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "hex_to_mac",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_valid_ipv4",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_valid_mac",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "mac_to_hex",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "download_bitmap",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "download_font",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "download_music",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "download_sound_effect",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "free_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "http_get",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "http_post",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "http_response_to_string",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "save_response_to_file",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_incoming_requests",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_delete_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_get_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_options_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_post_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_put_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_trace_request_for",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "request_body",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "request_has_query_parameter",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "request_query_parameter",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "request_query_string",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "request_uri",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "send_css_file_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "send_file_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "send_html_file_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "send_javascript_file_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "send_response",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "stop_web_server",
+      "category": "Networking",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "bitmap_quad_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "bitmap_ray_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "bitmap_triangle_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "resolve_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_circle_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_quad_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_ray_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_triangle_collision",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "vector_from_point_to_rect",
+      "category": "Physics",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "adc_device_named",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_adc",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_all_adc",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_adc_device",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "open_adc",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "read_adc",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "gpio_pin_to_int",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_gpio",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_cleanup",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_get_servo_pulsewidth",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_i2c_open",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_i2c_write",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_init",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_mode",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_pull_up_down",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_pwm_dutycycle",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_pwm_frequency",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_pwm_range",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_set_servo_pulsewidth",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_spi_close",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_spi_open",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_spi_transfer",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "raspi_write",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_cleanup",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_init",
+      "category": "Raspberry",
+      "status": "in_review",
+      "description": "(add description)",
+      "claimedBy": "anandika-nair",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/608"
+    },
+    {
+      "functionName": "remote_raspi_set_mode",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_set_pull_up_down",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_set_pwm_dutycycle",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_set_pwm_frequency",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_set_pwm_range",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "remote_raspi_write",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_all_motors",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_motor",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "free_motor_device",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_motor_device",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "motor_named",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "open_motor",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_motor_direction",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_motor_speed",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "stop_motor",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_all_servos",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "close_servo",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_servo_device",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "open_servo",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "servo_named",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "set_servo_angle",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "stop_servo",
+      "category": "Raspberry",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "call_for_all_sprites",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "create_sprite_pack",
+      "category": "Sprites",
+      "status": "available",
+      "description": "This pull request adds a new set of example files demonstrating how to simulate sprite pack switching in SplashKit, in multiple languages (C++, C#, Python), along with the required image assets. The e",
+      "claimedBy": "Triet-coder",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/474"
+    },
+    {
+      "functionName": "current_sprite_pack",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "draw_all_sprites",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "free_sprite_pack",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "has_sprite_pack",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "select_sprite_pack",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_add_to_velocity",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_anchor_position",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_center_point",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "sprite_screen_rectangle",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "vector_from_center_sprite_to_point",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "vector_from_to",
+      "category": "Sprites",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "base64_decode",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "base64_encode",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "bin_to_dec",
+      "category": "Utilities",
+      "status": "in_review",
+      "description": "This PR adds a new SplashKit utility usage example demonstrating how to convert a",
+      "claimedBy": "Mdanial01",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/672"
+    },
+    {
+      "functionName": "bin_to_hex",
+      "category": "Utilities",
+      "status": "in_review",
+      "description": "_Please include a summary of the changes and the related issue. Please also include relevant",
+      "claimedBy": "Mdanial01",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/671"
+    },
+    {
+      "functionName": "bin_to_oct",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "contains",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "dec_to_bin",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "dec_to_oct",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "hex_to_bin",
+      "category": "Utilities",
+      "status": "in_review",
+      "description": "_Please include a summary of the changes and the related issue. Please also include relevant",
+      "claimedBy": "Mdanial01",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/670"
+    },
+    {
+      "functionName": "hex_to_dec",
+      "category": "Utilities",
+      "status": "merged",
+      "description": "Describe the example and what it demonstrates.",
+      "claimedBy": "huyhuynh2319",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/172"
+    },
+    {
+      "functionName": "hex_to_oct",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "index_of",
+      "category": "Utilities",
+      "status": "merged",
+      "description": "The program asks the user to enter the sentence, then the word they want to find the index of, the program returns the index of the word in the sentence. If the word is not found, the program says tha",
+      "claimedBy": "breezy-codes",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/211"
+    },
+    {
+      "functionName": "is_binary",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_hex",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_octal",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "is_prime_number",
+      "category": "Utilities",
+      "status": "in_review",
+      "description": "This PR adds a new SplashKit utility usage example demonstrating how to test integers for primality",
+      "claimedBy": "Mdanial01",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/613"
+    },
+    {
+      "functionName": "least_common_multiple",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "length_of",
+      "category": "Utilities",
+      "status": "merged",
+      "description": "Small program that uses an array to loop through a few different strings to check the length of each one.",
+      "claimedBy": "breezy-codes",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/216"
+    },
+    {
+      "functionName": "oct_to_bin",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "oct_to_dec",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "oct_to_hex",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "to_double",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "to_integer",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "to_string",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "write_with_delay",
+      "category": "Utilities",
+      "status": "available",
+      "description": "(add description)",
+      "claimedBy": "",
+      "prLink": ""
+    },
+    {
+      "functionName": "display_dialog",
+      "category": "Utilities",
+      "status": "in_review",
+      "description": "This example demonstrates how to use `display_dialog` with a custom font and font size.",
+      "claimedBy": "anandika-nair",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/639"
+    },
+    {
+      "functionName": "refresh_window",
+      "category": "Windows",
+      "status": "available",
+      "description": "This is the usage example done by me for function refresh_window(window wind, unsigned int target_fps) in the API group windows section.",
+      "claimedBy": "benmathewthomas",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/97"
     }
   ],
-  "lastUpdated": "2026-08-29T03:41:56.763Z"
+  "lastUpdated": "2026-08-29T04:03:45.314Z"
 }
