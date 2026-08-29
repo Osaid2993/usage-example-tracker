@@ -1,0 +1,148 @@
+name: Auto-Update Usage Example Tracker
+
+# Triggers on PR events — updates tracker.json and commits it back
+on:
+  pull_request:
+    types: [opened, closed, reopened]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  update-tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if tracker.json exists
+        id: check
+        run: |
+          # Adjust this path to where tracker.json lives in your repo
+          if [ -f "tracker.json" ]; then
+            echo "found=true" >> $GITHUB_OUTPUT
+          elif [ -f "tracker/tracker.json" ]; then
+            echo "found=true" >> $GITHUB_OUTPUT
+            echo "path=tracker/" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+            echo "tracker.json not found, skipping."
+          fi
+
+      - name: Update tracker from PR event
+        if: steps.check.outputs.found == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const pr = context.payload.pull_request;
+            const prefix = '${{ steps.check.outputs.path }}' || '';
+            const trackerPath = prefix + 'tracker.json';
+
+            // Load tracker
+            const raw = fs.readFileSync(trackerPath, 'utf-8');
+            const data = JSON.parse(raw);
+            const entries = data.entries || [];
+
+            // Extract function names from PR title
+            const title = pr.title.toLowerCase();
+            const snakeMatches = title.match(/\b[a-z][a-z_]{2,}[a-z]\b/g) || [];
+            const ignore = new Set([
+              'usage','example','examples','add','update','fix','create',
+              'added','updated','fixed','created','new','for','and',
+              'the','with','from','this','that','splashkit','splash_kit',
+              'pull_request','issue','branch','merge','review',
+              'readme','docs','documentation','guide','tutorial',
+            ]);
+            const funcNames = snakeMatches.filter(m => !ignore.has(m) && m.includes('_'));
+
+            if (funcNames.length === 0) {
+              console.log('No function names found in PR title, skipping.');
+              return;
+            }
+
+            console.log(`PR #${pr.number}: "${pr.title}"`);
+            console.log(`Extracted function names: ${funcNames.join(', ')}`);
+
+            // Determine new status
+            const isMerged = pr.merged_at != null || (context.payload.action === 'closed' && pr.merged);
+            const isOpen = pr.state === 'open';
+            const isClosed = pr.state === 'closed' && !isMerged;
+
+            let newStatus;
+            if (isMerged) newStatus = 'merged';
+            else if (isOpen) newStatus = 'in_review';
+            else if (isClosed) newStatus = null; // Closed without merge — don't change status
+            else return;
+
+            if (!newStatus) {
+              console.log('PR closed without merge, no status change.');
+              return;
+            }
+
+            const statusRank = { available: 0, claimed: 1, in_progress: 2, in_review: 3, merged: 4 };
+            let updated = false;
+
+            // Match and update entries
+            for (const funcName of funcNames) {
+              const norm = funcName.toLowerCase().replace(/[^a-z0-9_]/g, '_');
+
+              for (const entry of entries) {
+                const entryNorm = entry.functionName.toLowerCase().replace(/[^a-z0-9_]/g, '_');
+
+                if (entryNorm === norm || entryNorm.includes(norm) || norm.includes(entryNorm)) {
+                  // Only advance status, never go backward
+                  if (statusRank[newStatus] > statusRank[entry.status]) {
+                    console.log(`  ✓ ${entry.functionName}: ${entry.status} → ${newStatus}`);
+                    entry.status = newStatus;
+                    entry.prLink = pr.html_url;
+                    entry.claimedBy = entry.claimedBy || pr.user.login;
+                    updated = true;
+                  } else {
+                    console.log(`  - ${entry.functionName}: already ${entry.status}, no change`);
+                  }
+                  break;
+                }
+              }
+            }
+
+            if (updated) {
+              data.lastUpdated = new Date().toISOString();
+              fs.writeFileSync(trackerPath, JSON.stringify(data, null, 2));
+              console.log('tracker.json updated.');
+            } else {
+              console.log('No entries updated.');
+            }
+
+      - name: Commit updated tracker
+        if: steps.check.outputs.found == 'true'
+        run: |
+          PREFIX="${{ steps.check.outputs.path }}"
+          TRACKER="${PREFIX}tracker.json"
+
+          git config user.name "tracker-bot"
+          git config user.email "tracker-bot@users.noreply.github.com"
+          git add "$TRACKER"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            PR_NUM=${{ github.event.pull_request.number }}
+            PR_TITLE="${{ github.event.pull_request.title }}"
+            ACTION="${{ github.event.action }}"
+
+            if [ "$ACTION" = "closed" ] && [ "${{ github.event.pull_request.merged }}" = "true" ]; then
+              MSG="tracker: mark as merged from PR #${PR_NUM}"
+            elif [ "$ACTION" = "opened" ]; then
+              MSG="tracker: mark as in_review from PR #${PR_NUM}"
+            else
+              MSG="tracker: update from PR #${PR_NUM} (${ACTION})"
+            fi
+
+            git commit -m "$MSG"
+            git push
+            echo "Committed and pushed tracker update."
+          fi
