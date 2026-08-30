@@ -5313,11 +5313,11 @@
     {
       "id": "auto_532",
       "functionName": "inset_rectangle",
-      "description": "(add description for inset_rectangle)",
+      "description": "**Splashkit Function:** `inset_rectangle`",
       "category": "Geometry",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "himanshigaba22",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/833",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/97"
     }
   ],
-  "lastUpdated": "2026-08-29T07:31:24.750Z"
+  "lastUpdated": "2026-08-30T04:05:56.518Z"
 }
