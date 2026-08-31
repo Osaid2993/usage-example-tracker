@@ -1803,41 +1803,41 @@
     {
       "id": "auto_181",
       "functionName": "color_black",
-      "description": "(add description for color_black)",
+      "description": "Adds a usage example for the `color_black` function in the color API category. The example draws an 8x8 checkerboard, using nested loops to fill every second square with `color_black()` on a white bac",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Abod-A",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/834",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_182",
       "functionName": "color_blue",
-      "description": "(add description for color_blue)",
+      "description": "Adds a usage example for the `color_blue` function in the color API category. The example draws a simple bar chart, looping over an array of bar heights and filling each bar with `color_blue()` above ",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Abod-A",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/835",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_183",
       "functionName": "color_blue_violet",
-      "description": "(add description for color_blue_violet)",
+      "description": "Adds a usage example for the `color_blue_violet` function in the color API category. The example draws a bullseye of concentric rings, looping from the largest circle down to the smallest and alternat",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Abod-A",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/836",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_184",
       "functionName": "color_bright_green",
-      "description": "(add description for color_bright_green)",
+      "description": "Adds a usage example for the `color_bright_green` function in the color API category. The example draws a traffic light with a black body, two dark gray lamps that are switched off, and the bottom lam",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Abod-A",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/837",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/97"
     }
   ],
-  "lastUpdated": "2026-08-30T04:05:56.518Z"
+  "lastUpdated": "2026-08-31T04:11:38.146Z"
 }
