@@ -26,6 +26,8 @@
   .cat-tag{font-size:10px;color:#404055}.edit-btns{display:flex;gap:4px;flex-shrink:0}.icon-btn{background:none;border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-muted);cursor:pointer;font-size:13px;padding:3px 8px;font-family:var(--font);transition:all 0.15s}.icon-btn:hover{border-color:var(--sk-teal);color:var(--text)}.icon-btn.del:hover{border-color:var(--red);color:var(--red)}
   .empty{text-align:center;padding:52px 20px;color:var(--text-muted)}.footer{text-align:center;padding:24px 0;font-size:11px;color:#333345;border-top:1px solid var(--border);margin-top:8px}.footer a{color:var(--sk-orange);font-weight:600}
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}.modal{background:var(--surface);border:1px solid var(--sk-teal-border);border-radius:14px;padding:28px;width:100%;max-width:520px;box-shadow:0 24px 64px rgba(0,0,0,0.5)}.modal h2{font-size:16px;margin-bottom:18px;font-weight:700}.modal label{display:flex;flex-direction:column;gap:5px;font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px}.modal input,.modal select,.modal textarea{padding:9px 12px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:13px;font-family:var(--font);outline:none;width:100%;transition:border-color 0.15s}.modal input:focus,.modal select:focus,.modal textarea:focus{border-color:var(--sk-teal)}.modal textarea{resize:vertical}.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:20px}
+  .live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:5px;animation:pulse 2s infinite}.live-dot.offline{background:var(--red);animation:none}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
   @media(max-width:600px){.header-top{flex-direction:column}.controls{flex-direction:column}.search-input,.cat-select{width:100%}.entry{flex-direction:column}.edit-btns{align-self:flex-end}.header h1{font-size:18px}.sk-logo{width:34px;height:34px}}
 </style>
 </head>
@@ -44,6 +46,67 @@
   <div id="content"></div>
 </div>
 <div class="modal-overlay" id="editModal" style="display:none"><div class="modal"><h2 id="modalTitle">Edit Entry</h2><label>Function Name<input id="mFuncName" placeholder="e.g. fill_rectangle"></label><label>Category<select id="mCategory"></select></label><label>Description<textarea id="mDesc" rows="2" placeholder="What does this example cover?"></textarea></label><label>Status<select id="mStatus"><option value="available">Available</option><option value="claimed">Claimed</option><option value="in_progress">In Progress</option><option value="in_review">In Review</option><option value="merged">Merged</option></select></label><label>Claimed By<input id="mClaimedBy" placeholder="GitHub username"></label><label>PR Link (optional)<input id="mPrLink" placeholder="https://github.com/..."></label><div class="modal-actions"><button class="btn btn-dim" onclick="closeModal()">Cancel</button><button class="btn btn-accent" onclick="saveModal()">Save</button></div></div></div>
+
+<!-- Firebase SDK -->
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getDatabase, ref, set, onValue, remove } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js';
+
+// ============================================
+// PASTE YOUR FIREBASE CONFIG BELOW
+// ============================================
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
+  projectId: "YOUR_PROJECT",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+// ============================================
+
+try {
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  const claimsRef = ref(db, 'claims');
+
+  window._fbConnected = true;
+
+  // Save a claim to Firebase
+  window._fbSaveClaim = function(functionName, claimData) {
+    const key = functionName.replace(/[.#$\[\]]/g, '_');
+    set(ref(db, 'claims/' + key), {
+      status: claimData.status,
+      claimedBy: claimData.claimedBy || '',
+      prLink: claimData.prLink || '',
+      updatedAt: new Date().toISOString()
+    });
+  };
+
+  // Remove a claim from Firebase
+  window._fbRemoveClaim = function(functionName) {
+    const key = functionName.replace(/[.#$\[\]]/g, '_');
+    remove(ref(db, 'claims/' + key));
+  };
+
+  // Listen for real-time changes
+  onValue(claimsRef, (snapshot) => {
+    window._liveClaims = snapshot.val() || {};
+    window._firebaseReady = true;
+    if (typeof renderContent === 'function') {
+      renderContent();
+    }
+  });
+
+  console.log('Firebase connected');
+} catch(e) {
+  console.warn('Firebase not configured, running in offline mode:', e.message);
+  window._fbConnected = false;
+  window._firebaseReady = false;
+}
+</script>
+
 <script>
 const DATA_URL='tracker.json',STATUS_LABELS={available:'Available',claimed:'Claimed',in_progress:'In Progress',in_review:'In Review',merged:'Merged'},STATUS_COLORS={available:{c:'var(--green)',bg:'var(--green-bg)',b:'var(--green-border)'},claimed:{c:'var(--yellow)',bg:'var(--yellow-bg)',b:'var(--yellow-border)'},in_progress:{c:'var(--blue)',bg:'var(--blue-bg)',b:'var(--blue-border)'},in_review:{c:'var(--purple)',bg:'var(--purple-bg)',b:'var(--purple-border)'},merged:{c:'var(--gray)',bg:'var(--gray-bg)',b:'var(--gray-border)'}},CATEGORIES=["Animations","Audio","Camera","Color","Generative AI","Geometry","Graphics","Input","Interface","JSON","Logging","Networking","Physics","Raspberry","Resource Bundles","Resources","Sprites","Terminal","Timers","Types","Utilities","Windows","Other"];
 let data={entries:[]},filterStatus='all',filterCategory='all',searchQuery='',isLead=false,editingId=null;
@@ -55,14 +118,54 @@ catSelect.addEventListener('change',()=>{filterCategory=catSelect.value;renderCo
 document.getElementById('leadToggle').addEventListener('change',e=>{isLead=e.target.checked;addBtn.style.display=isLead?'':'none';leadTools.classList.toggle('visible',isLead);renderContent()});
 async function loadData(){try{const r=await fetch(DATA_URL+'?t='+Date.now());if(!r.ok)throw new Error();data=await r.json()}catch(e){const s=localStorage.getItem('splashkit-tracker');if(s)data=JSON.parse(s);else data={entries:[]}}renderStats();renderContent()}
 function saveLocal(){localStorage.setItem('splashkit-tracker',JSON.stringify(data))}function genId(){return Date.now().toString(36)+Math.random().toString(36).slice(2,5)}function esc(s){return s?s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):''}
-function renderStats(){const entries=data.entries||[],stats={};Object.keys(STATUS_LABELS).forEach(s=>stats[s]=entries.filter(e=>e.status===s).length);let h='';Object.entries(STATUS_LABELS).forEach(([k,l])=>{const sc=STATUS_COLORS[k],a=filterStatus===k,cl=filterStatus==='all'?'':(a?'active':'dimmed');h+=`<button class="stat-btn ${cl}" style="color:${sc.c};border-color:${a?sc.b:'var(--border)'};background:${a?sc.bg:'transparent'}" onclick="toggleStatus('${k}')">${l}: ${stats[k]||0}</button>`});if(filterStatus!=='all')h+=`<button class="stat-btn" style="color:var(--text-muted)" onclick="toggleStatus('all')">show all</button>`;statsBar.innerHTML=h}
-function renderContent(){const entries=data.entries||[],filtered=entries.filter(e=>{if(filterStatus!=='all'&&e.status!==filterStatus)return false;if(filterCategory!=='all'&&e.category!==filterCategory)return false;if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}return true}),groups={};filtered.forEach(e=>{if(!groups[e.category])groups[e.category]=[];groups[e.category].push(e)});const cats=Object.keys(groups).sort();let h='';if(!filtered.length){h+=entries.length===0?'<div class="empty"><p style="font-size:14px;margin-bottom:8px">No data loaded.</p><p style="font-size:12px">Enable Lead mode and Import JSON.</p></div>':'<div class="empty"><p style="font-size:13px">No entries match your filters.</p></div>'}else{cats.forEach(cat=>{const ce=groups[cat],ac=ce.filter(e=>e.status==='available').length;h+='<div class="cat-group">';h+=`<div class="cat-header"><span>${esc(cat)}</span>${ac>0?`<span class="avail">${ac} available</span>`:''}`;h+='</div><div class="cat-entries">';ce.forEach(e=>{h+=`<div class="entry"><div class="entry-main"><div class="entry-top"><span class="func-name">${esc(e.functionName)}</span><span class="badge badge-${e.status}">${STATUS_LABELS[e.status]||e.status}</span><span class="cat-tag">${esc(e.category)}</span></div>`;if(e.description&&!e.description.startsWith('(add description'))h+=`<div class="entry-desc">${esc(e.description)}</div>`;if(e.claimedBy){h+=`<div class="entry-meta">&rarr; ${esc(e.claimedBy)}`;if(e.prLink)h+=` <a href="${esc(e.prLink)}" target="_blank" rel="noopener">PR &nearr;</a>`;h+='</div>'}h+='</div>';if(isLead)h+=`<div class="edit-btns"><button class="icon-btn" onclick="openEdit('${e.id}')">✎</button><button class="icon-btn del" onclick="deleteEntry('${e.id}')">✕</button></div>`;h+='</div>'});h+='</div></div>'})}const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);h+=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;h+='</div>';content.innerHTML=h;renderStats()}
+
+// Apply Firebase claims on top of tracker.json data
+function applyFirebaseClaims(entries) {
+  if (!window._firebaseReady || !window._liveClaims) return entries;
+  const statusRank = { available:0, claimed:1, in_progress:2, in_review:3, merged:4 };
+  entries.forEach(entry => {
+    const key = entry.functionName.replace(/[.#$\[\]]/g, '_');
+    const claim = window._liveClaims[key];
+    if (!claim) return;
+    const claimRank = statusRank[claim.status] || 0;
+    const entryRank = statusRank[entry.status] || 0;
+    // Firebase claim wins if entry is still available, or claim is higher status
+    if (entry.status === 'available' || claimRank > entryRank) {
+      entry.status = claim.status;
+      if (claim.claimedBy) entry.claimedBy = claim.claimedBy;
+      if (claim.prLink) entry.prLink = claim.prLink;
+    }
+  });
+  return entries;
+}
+
+function renderStats(){const entries=applyFirebaseClaims(data.entries||[]);const stats={};Object.keys(STATUS_LABELS).forEach(s=>stats[s]=entries.filter(e=>e.status===s).length);let h='';if(window._firebaseReady){h+='<span class="live-dot"></span> '}else if(window._fbConnected===false){h+='<span class="live-dot offline"></span> '}Object.entries(STATUS_LABELS).forEach(([k,l])=>{const sc=STATUS_COLORS[k],a=filterStatus===k,cl=filterStatus==='all'?'':(a?'active':'dimmed');h+=`<button class="stat-btn ${cl}" style="color:${sc.c};border-color:${a?sc.b:'var(--border)'};background:${a?sc.bg:'transparent'}" onclick="toggleStatus('${k}')">${l}: ${stats[k]||0}</button>`});if(filterStatus!=='all')h+=`<button class="stat-btn" style="color:var(--text-muted)" onclick="toggleStatus('all')">show all</button>`;statsBar.innerHTML=h}
+
+function renderContent(){const entries=applyFirebaseClaims(data.entries||[]);const filtered=entries.filter(e=>{if(filterStatus!=='all'&&e.status!==filterStatus)return false;if(filterCategory!=='all'&&e.category!==filterCategory)return false;if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}return true}),groups={};filtered.forEach(e=>{if(!groups[e.category])groups[e.category]=[];groups[e.category].push(e)});const cats=Object.keys(groups).sort();let h='';if(!filtered.length){h+=entries.length===0?'<div class="empty"><p style="font-size:14px;margin-bottom:8px">No data loaded.</p><p style="font-size:12px">Enable Claim mode and Import JSON.</p></div>':'<div class="empty"><p style="font-size:13px">No entries match your filters.</p></div>'}else{cats.forEach(cat=>{const ce=groups[cat],ac=ce.filter(e=>e.status==='available').length;h+='<div class="cat-group">';h+=`<div class="cat-header"><span>${esc(cat)}</span>${ac>0?`<span class="avail">${ac} available</span>`:''}`;h+='</div><div class="cat-entries">';ce.forEach(e=>{h+=`<div class="entry"><div class="entry-main"><div class="entry-top"><span class="func-name">${esc(e.functionName)}</span><span class="badge badge-${e.status}">${STATUS_LABELS[e.status]||e.status}</span><span class="cat-tag">${esc(e.category)}</span></div>`;if(e.description&&!e.description.startsWith('(add description'))h+=`<div class="entry-desc">${esc(e.description)}</div>`;if(e.claimedBy){h+=`<div class="entry-meta">&rarr; ${esc(e.claimedBy)}`;if(e.prLink)h+=` <a href="${esc(e.prLink)}" target="_blank" rel="noopener">PR &nearr;</a>`;h+='</div>'}h+='</div>';if(isLead)h+=`<div class="edit-btns"><button class="icon-btn" onclick="openEdit('${e.id}')">✎</button><button class="icon-btn del" onclick="deleteEntry('${e.id}')">✕</button></div>`;h+='</div>'});h+='</div></div>'})}const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);h+=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;h+='</div>';content.innerHTML=h;renderStats()}
 function toggleStatus(s){filterStatus=filterStatus===s?'all':s;renderContent()}
 function openEdit(id){editingId=id;const e=data.entries.find(x=>x.id===id);if(!e)return;document.getElementById('modalTitle').textContent='Edit Entry';document.getElementById('mFuncName').value=e.functionName||'';document.getElementById('mCategory').value=e.category||'Other';document.getElementById('mDesc').value=e.description||'';document.getElementById('mStatus').value=e.status||'available';document.getElementById('mClaimedBy').value=e.claimedBy||'';document.getElementById('mPrLink').value=e.prLink||'';document.getElementById('editModal').style.display='flex'}
 function openAdd(){editingId=null;document.getElementById('modalTitle').textContent='Add Entry';document.getElementById('mFuncName').value='';document.getElementById('mCategory').value=filterCategory!=='all'?filterCategory:'Graphics';document.getElementById('mDesc').value='';document.getElementById('mStatus').value='available';document.getElementById('mClaimedBy').value='';document.getElementById('mPrLink').value='';document.getElementById('editModal').style.display='flex'}
 function closeModal(){document.getElementById('editModal').style.display='none'}
-function saveModal(){const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};if(!entry.functionName)return;if(editingId){const i=data.entries.findIndex(e=>e.id===editingId);if(i>=0)Object.assign(data.entries[i],entry)}else{entry.id=genId();entry.createdAt=new Date().toISOString();data.entries.push(entry)}data.lastUpdated=new Date().toISOString();saveLocal();closeModal();renderContent()}
-function deleteEntry(id){if(!confirm('Remove this entry?'))return;data.entries=data.entries.filter(e=>e.id!==id);data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}
+
+function saveModal(){
+  const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};
+  if(!entry.functionName)return;
+  if(editingId){const i=data.entries.findIndex(e=>e.id===editingId);if(i>=0)Object.assign(data.entries[i],entry)}
+  else{entry.id=genId();entry.createdAt=new Date().toISOString();data.entries.push(entry)}
+  data.lastUpdated=new Date().toISOString();
+  saveLocal();
+
+  // Save to Firebase for real-time sync
+  if(window._firebaseReady && entry.status !== 'available'){
+    window._fbSaveClaim(entry.functionName, entry);
+  } else if(window._firebaseReady && entry.status === 'available'){
+    window._fbRemoveClaim(entry.functionName);
+  }
+
+  closeModal();renderContent()
+}
+
+function deleteEntry(id){if(!confirm('Remove this entry?'))return;const e=data.entries.find(x=>x.id===id);if(e && window._firebaseReady){window._fbRemoveClaim(e.functionName)}data.entries=data.entries.filter(e=>e.id!==id);data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}
 function exportJSON(){const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='tracker.json';a.click();URL.revokeObjectURL(a.href)}
 function importJSON(){document.getElementById('importFile').click()}
 function handleImport(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=function(ev){try{const d=JSON.parse(ev.target.result);if(d.entries&&Array.isArray(d.entries)){data=d;data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}else alert('Invalid JSON.')}catch(err){alert('Invalid JSON file.')}};r.readAsText(f);e.target.value=''}
