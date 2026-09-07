@@ -8069,10 +8069,10 @@
     {
       "functionName": "quads_intersect",
       "category": "Geometry",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "This pull request adds a new SplashKit usage example for the `quads_intersect` function in the Geometry category.",
+      "claimedBy": "Sparsh300",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/843"
     },
     {
       "functionName": "set_quad_point",
@@ -8941,10 +8941,10 @@
     {
       "functionName": "sprite_add_to_velocity",
       "category": "Sprites",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "**Splashkit Function:** `sprite_add_to_velocity`",
+      "claimedBy": "himanshigaba22",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/844"
     },
     {
       "functionName": "sprite_anchor_position",
@@ -9203,5 +9203,5 @@
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/97"
     }
   ],
-  "lastUpdated": "2026-09-06T03:21:49.094Z"
+  "lastUpdated": "2026-09-07T03:20:35.372Z"
 }
