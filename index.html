@@ -28,6 +28,7 @@
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}.modal{background:var(--surface);border:1px solid var(--sk-teal-border);border-radius:14px;padding:28px;width:100%;max-width:520px;box-shadow:0 24px 64px rgba(0,0,0,0.5)}.modal h2{font-size:16px;margin-bottom:18px;font-weight:700}.modal label{display:flex;flex-direction:column;gap:5px;font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px}.modal input,.modal select,.modal textarea{padding:9px 12px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:13px;font-family:var(--font);outline:none;width:100%;transition:border-color 0.15s}.modal input:focus,.modal select:focus,.modal textarea:focus{border-color:var(--sk-teal)}.modal textarea{resize:vertical}.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:20px}
   .live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:5px;animation:pulse 2s infinite}.live-dot.offline{background:var(--red);animation:none}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+  .auth-area{display:flex;align-items:center;gap:8px;margin-top:2px}.auth-btn{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--surface-2);color:var(--text-muted);font-size:11px;font-weight:600;font-family:var(--font);cursor:pointer;transition:border-color 0.15s}.auth-btn:hover{border-color:var(--sk-teal-border);color:var(--text)}.auth-btn svg{width:14px;height:14px;fill:currentColor}.user-badge{display:flex;align-items:center;gap:6px;padding:4px 10px;border-radius:var(--radius-sm);border:1px solid var(--sk-teal-border);background:var(--sk-teal-dim);font-size:11px;color:var(--sk-teal);font-weight:600}.user-badge img{width:18px;height:18px;border-radius:50%}.signout-btn{background:none;border:none;color:var(--text-muted);font-size:10px;cursor:pointer;font-family:var(--font);padding:2px 4px}.signout-btn:hover{color:var(--red)}.claim-owner{font-size:10px;color:var(--text-muted);font-style:italic}
   @media(max-width:600px){.header-top{flex-direction:column}.controls{flex-direction:column}.search-input,.cat-select{width:100%}.entry{flex-direction:column}.edit-btns{align-self:flex-end}.header h1{font-size:18px}.sk-logo{width:34px;height:34px}}
 </style>
 </head>
@@ -37,7 +38,12 @@
     <svg class="sk-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g transform="translate(5,5)"><path d="M10 30 L45 10 L80 30 L80 70 L45 90 L10 70 Z" fill="#e8a020" stroke="#3a3530" stroke-width="4" stroke-linejoin="round"/><path d="M10 30 L45 10 L80 30 L45 50 Z" fill="#f0b030" stroke="#3a3530" stroke-width="4" stroke-linejoin="round"/><path d="M10 30 L45 50 L45 90 L10 70 Z" fill="#d09018" stroke="#3a3530" stroke-width="4" stroke-linejoin="round"/><path d="M80 30 L45 50 L45 90 L80 70 Z" fill="#e8a020" stroke="#3a3530" stroke-width="4" stroke-linejoin="round"/><path d="M30 12 L30 45 L38 38 L46 45 L46 12" fill="#3cc8c8" stroke="#3a3530" stroke-width="3" stroke-linejoin="round"/><line x1="55" y1="68" x2="68" y2="62" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/><line x1="55" y1="75" x2="65" y2="70" stroke="#3a3530" stroke-width="3" stroke-linecap="round"/></g></svg>
     <div><div class="brand-label">SplashKit Website</div><h1>Usage Example <span>Tracker</span></h1><div class="header-tagline">Built by a student for students.</div></div>
   </div>
-  <label class="lead-toggle"><input type="checkbox" id="leadToggle"> Claim mode</label>
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:2px">
+    <label class="lead-toggle"><input type="checkbox" id="leadToggle"> Claim mode</label>
+    <div class="auth-area" id="authArea">
+      <button class="auth-btn" id="signInBtn" onclick="signInWithGitHub()"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Sign in with GitHub</button>
+    </div>
+  </div>
 </div></div></div>
 <div class="main">
   <div class="stats-bar" id="statsBar"></div>
@@ -51,7 +57,7 @@
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
 import { getDatabase, ref, set, onValue, remove } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js';
-
+import { getAuth, GithubAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDXIy9xKeIpy_Aa2i_xHHibd2CKB_Q-yCQ",
@@ -62,29 +68,133 @@ const firebaseConfig = {
   messagingSenderId: "719014220435",
   appId: "1:719014220435:web:f3f35d8c06c5a373aff366"
 };
-// ============================================
 
 try {
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
+  const auth = getAuth(app);
+  const provider = new GithubAuthProvider();
   const claimsRef = ref(db, 'claims');
 
   window._fbConnected = true;
+  window._currentUser = null;
 
-  // Save a claim to Firebase
-  window._fbSaveClaim = function(functionName, claimData) {
+  // Auth state listener
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // GitHub username is in providerData
+      const ghData = user.providerData.find(p => p.providerId === 'github.com');
+      window._currentUser = {
+        uid: user.uid,
+        displayName: ghData?.displayName || user.displayName || '',
+        username: ghData?.uid || '',  // GitHub numeric UID
+        photoURL: user.photoURL || '',
+        // We'll also fetch the GitHub username from the access token result
+        githubUsername: ''
+      };
+      // Try to get GitHub username from the stored value
+      const stored = localStorage.getItem('gh_username');
+      if (stored) window._currentUser.githubUsername = stored;
+      updateAuthUI();
+    } else {
+      window._currentUser = null;
+      updateAuthUI();
+    }
+    if (typeof renderContent === 'function') renderContent();
+  });
+
+  // Sign in
+  window.signInWithGitHub = async function() {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const credential = GithubAuthProvider.credentialFromResult(result);
+      // Fetch GitHub username using the access token
+      if (credential?.accessToken) {
+        try {
+          const res = await fetch('https://api.github.com/user', {
+            headers: { Authorization: 'token ' + credential.accessToken }
+          });
+          const ghUser = await res.json();
+          if (ghUser.login) {
+            window._currentUser.githubUsername = ghUser.login;
+            localStorage.setItem('gh_username', ghUser.login);
+          }
+        } catch(e) { console.warn('Could not fetch GitHub username:', e); }
+      }
+      updateAuthUI();
+      if (typeof renderContent === 'function') renderContent();
+    } catch(e) {
+      if (e.code !== 'auth/popup-closed-by-user') {
+        console.error('Sign in failed:', e);
+        alert('Sign in failed: ' + e.message);
+      }
+    }
+  };
+
+  // Sign out
+  window.signOutUser = async function() {
+    await signOut(auth);
+    localStorage.removeItem('gh_username');
+    window._currentUser = null;
+    updateAuthUI();
+    if (typeof renderContent === 'function') renderContent();
+  };
+
+  function updateAuthUI() {
+    const area = document.getElementById('authArea');
+    if (!area) return;
+    const u = window._currentUser;
+    if (u) {
+      const name = u.githubUsername || u.displayName || 'User';
+      area.innerHTML = `<div class="user-badge">${u.photoURL ? '<img src="'+u.photoURL+'" alt="">' : ''}${name}</div><button class="signout-btn" onclick="signOutUser()">sign out</button>`;
+    } else {
+      area.innerHTML = `<button class="auth-btn" id="signInBtn" onclick="signInWithGitHub()"><svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Sign in with GitHub</button>`;
+    }
+  }
+
+  // Check if current user owns a claim (or is a lead)
+  window._canModifyClaim = function(functionName) {
+    if (!window._currentUser) return false;
     const key = functionName.replace(/[.#$\[\]]/g, '_');
+    const claim = (window._liveClaims || {})[key];
+    if (!claim) return true; // no claim exists, anyone can create
+    if (claim.uid === window._currentUser.uid) return true; // owner
+    if (window._isLeadUser) return true; // leads can override
+    return false;
+  };
+
+  // Save a claim to Firebase (with ownership)
+  window._fbSaveClaim = function(functionName, claimData) {
+    if (!window._currentUser) { alert('Sign in with GitHub to claim functions.'); return; }
+    const key = functionName.replace(/[.#$\[\]]/g, '_');
+    const existing = (window._liveClaims || {})[key];
+
+    // Block if someone else owns this claim (unless lead)
+    if (existing && existing.uid && existing.uid !== window._currentUser.uid && !window._isLeadUser) {
+      alert('This function is already claimed by ' + (existing.claimedBy || 'someone else') + '. Only the owner or a lead can change it.');
+      return;
+    }
+
     set(ref(db, 'claims/' + key), {
       status: claimData.status,
-      claimedBy: claimData.claimedBy || '',
+      claimedBy: claimData.claimedBy || window._currentUser.githubUsername || '',
       prLink: claimData.prLink || '',
+      uid: existing?.uid || window._currentUser.uid,
       updatedAt: new Date().toISOString()
     });
   };
 
-  // Remove a claim from Firebase
+  // Remove a claim from Firebase (with ownership check)
   window._fbRemoveClaim = function(functionName) {
+    if (!window._currentUser) return;
     const key = functionName.replace(/[.#$\[\]]/g, '_');
+    const existing = (window._liveClaims || {})[key];
+
+    if (existing && existing.uid && existing.uid !== window._currentUser.uid && !window._isLeadUser) {
+      alert('Only the owner or a lead can remove this claim.');
+      return;
+    }
+
     remove(ref(db, 'claims/' + key));
   };
 
@@ -92,8 +202,15 @@ try {
   onValue(claimsRef, (snapshot) => {
     window._liveClaims = snapshot.val() || {};
     window._firebaseReady = true;
-    if (typeof renderContent === 'function') {
-      renderContent();
+    if (typeof renderContent === 'function') renderContent();
+  });
+
+  // Check if user is a lead
+  const leadsRef = ref(db, 'leads');
+  onValue(leadsRef, (snapshot) => {
+    const leads = snapshot.val() || {};
+    if (window._currentUser) {
+      window._isLeadUser = !!leads[window._currentUser.uid];
     }
   });
 
@@ -141,19 +258,32 @@ function renderStats(){const entries=applyFirebaseClaims(data.entries||[]);const
 
 function renderContent(){const entries=applyFirebaseClaims(data.entries||[]);const filtered=entries.filter(e=>{if(filterStatus!=='all'&&e.status!==filterStatus)return false;if(filterCategory!=='all'&&e.category!==filterCategory)return false;if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}return true}),groups={};filtered.forEach(e=>{if(!groups[e.category])groups[e.category]=[];groups[e.category].push(e)});const cats=Object.keys(groups).sort();let h='';if(!filtered.length){h+=entries.length===0?'<div class="empty"><p style="font-size:14px;margin-bottom:8px">No data loaded.</p><p style="font-size:12px">Enable Claim mode and Import JSON.</p></div>':'<div class="empty"><p style="font-size:13px">No entries match your filters.</p></div>'}else{cats.forEach(cat=>{const ce=groups[cat],ac=ce.filter(e=>e.status==='available').length;h+='<div class="cat-group">';h+=`<div class="cat-header"><span>${esc(cat)}</span>${ac>0?`<span class="avail">${ac} available</span>`:''}`;h+='</div><div class="cat-entries">';ce.forEach(e=>{h+=`<div class="entry"><div class="entry-main"><div class="entry-top"><span class="func-name">${esc(e.functionName)}</span><span class="badge badge-${e.status}">${STATUS_LABELS[e.status]||e.status}</span><span class="cat-tag">${esc(e.category)}</span></div>`;if(e.description&&!e.description.startsWith('(add description'))h+=`<div class="entry-desc">${esc(e.description)}</div>`;if(e.claimedBy){h+=`<div class="entry-meta">&rarr; ${esc(e.claimedBy)}`;if(e.prLink)h+=` <a href="${esc(e.prLink)}" target="_blank" rel="noopener">PR &nearr;</a>`;h+='</div>'}h+='</div>';if(isLead)h+=`<div class="edit-btns"><button class="icon-btn" onclick="openEdit('${e.id}')">✎</button><button class="icon-btn del" onclick="deleteEntry('${e.id}')">✕</button></div>`;h+='</div>'});h+='</div></div>'})}const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);h+=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;h+='</div>';content.innerHTML=h;renderStats()}
 function toggleStatus(s){filterStatus=filterStatus===s?'all':s;renderContent()}
-function openEdit(id){editingId=id;const e=data.entries.find(x=>x.id===id);if(!e)return;document.getElementById('modalTitle').textContent='Edit Entry';document.getElementById('mFuncName').value=e.functionName||'';document.getElementById('mCategory').value=e.category||'Other';document.getElementById('mDesc').value=e.description||'';document.getElementById('mStatus').value=e.status||'available';document.getElementById('mClaimedBy').value=e.claimedBy||'';document.getElementById('mPrLink').value=e.prLink||'';document.getElementById('editModal').style.display='flex'}
+function openEdit(id){editingId=id;const e=data.entries.find(x=>x.id===id);if(!e)return;if(window._firebaseReady && e.status!=='available' && !window._canModifyClaim(e.functionName)){alert('This function is claimed by someone else. Only the owner or a lead can edit it.');return}document.getElementById('modalTitle').textContent='Edit Entry';document.getElementById('mFuncName').value=e.functionName||'';document.getElementById('mCategory').value=e.category||'Other';document.getElementById('mDesc').value=e.description||'';document.getElementById('mStatus').value=e.status||'available';document.getElementById('mClaimedBy').value=e.claimedBy||(window._currentUser?window._currentUser.githubUsername||'':'');document.getElementById('mPrLink').value=e.prLink||'';document.getElementById('editModal').style.display='flex'}
 function openAdd(){editingId=null;document.getElementById('modalTitle').textContent='Add Entry';document.getElementById('mFuncName').value='';document.getElementById('mCategory').value=filterCategory!=='all'?filterCategory:'Graphics';document.getElementById('mDesc').value='';document.getElementById('mStatus').value='available';document.getElementById('mClaimedBy').value='';document.getElementById('mPrLink').value='';document.getElementById('editModal').style.display='flex'}
 function closeModal(){document.getElementById('editModal').style.display='none'}
 
 function saveModal(){
   const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};
   if(!entry.functionName)return;
+
+  // Check ownership before allowing changes to claimed functions
+  if(window._firebaseReady && entry.status !== 'available' && !window._currentUser){
+    alert('Sign in with GitHub to claim functions.');return;
+  }
+  if(window._firebaseReady && !window._canModifyClaim(entry.functionName)){
+    alert('This function is claimed by someone else. Only the owner or a lead can change it.');return;
+  }
+
+  // Auto-fill claimedBy with GitHub username if claiming
+  if(entry.status !== 'available' && !entry.claimedBy && window._currentUser){
+    entry.claimedBy = window._currentUser.githubUsername || window._currentUser.displayName || '';
+  }
+
   if(editingId){const i=data.entries.findIndex(e=>e.id===editingId);if(i>=0)Object.assign(data.entries[i],entry)}
   else{entry.id=genId();entry.createdAt=new Date().toISOString();data.entries.push(entry)}
   data.lastUpdated=new Date().toISOString();
   saveLocal();
 
-  // Save to Firebase for real-time sync
   if(window._firebaseReady && entry.status !== 'available'){
     window._fbSaveClaim(entry.functionName, entry);
   } else if(window._firebaseReady && entry.status === 'available'){
@@ -163,7 +293,7 @@ function saveModal(){
   closeModal();renderContent()
 }
 
-function deleteEntry(id){if(!confirm('Remove this entry?'))return;const e=data.entries.find(x=>x.id===id);if(e && window._firebaseReady){window._fbRemoveClaim(e.functionName)}data.entries=data.entries.filter(e=>e.id!==id);data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}
+function deleteEntry(id){const e=data.entries.find(x=>x.id===id);if(!e)return;if(window._firebaseReady && e.status!=='available' && !window._canModifyClaim(e.functionName)){alert('This function is claimed by someone else. Only the owner or a lead can remove it.');return}if(!confirm('Remove this entry?'))return;if(e && window._firebaseReady){window._fbRemoveClaim(e.functionName)}data.entries=data.entries.filter(x=>x.id!==id);data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}
 function exportJSON(){const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='tracker.json';a.click();URL.revokeObjectURL(a.href)}
 function importJSON(){document.getElementById('importFile').click()}
 function handleImport(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=function(ev){try{const d=JSON.parse(ev.target.result);if(d.entries&&Array.isArray(d.entries)){data=d;data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}else alert('Invalid JSON.')}catch(err){alert('Invalid JSON file.')}};r.readAsText(f);e.target.value=''}
