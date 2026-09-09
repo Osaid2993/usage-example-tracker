@@ -30,6 +30,61 @@
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
   .auth-area{display:flex;align-items:center;gap:8px;margin-top:2px}.auth-btn{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--surface-2);color:var(--text-muted);font-size:11px;font-weight:600;font-family:var(--font);cursor:pointer;transition:border-color 0.15s}.auth-btn:hover{border-color:var(--sk-teal-border);color:var(--text)}.auth-btn svg{width:14px;height:14px;fill:currentColor}.user-badge{display:flex;align-items:center;gap:6px;padding:4px 10px;border-radius:var(--radius-sm);border:1px solid var(--sk-teal-border);background:var(--sk-teal-dim);font-size:11px;color:var(--sk-teal);font-weight:600}.user-badge img{width:18px;height:18px;border-radius:50%}.signout-btn{background:none;border:none;color:var(--text-muted);font-size:10px;cursor:pointer;font-family:var(--font);padding:2px 4px}.signout-btn:hover{color:var(--red)}.claim-owner{font-size:10px;color:var(--text-muted);font-style:italic}
   @media(max-width:600px){.header-top{flex-direction:column}.controls{flex-direction:column}.search-input,.cat-select{width:100%}.entry{flex-direction:column}.edit-btns{align-self:flex-end}.header h1{font-size:18px}.sk-logo{width:34px;height:34px}}
+  .tabs{display:flex;gap:4px;padding:14px 0 0;border-bottom:1px solid var(--border)}
+  .tab{background:transparent;border:1px solid transparent;border-bottom:none;border-radius:var(--radius-sm) var(--radius-sm) 0 0;padding:8px 15px;font-size:12px;font-weight:600;font-family:var(--font);color:var(--text-muted);cursor:pointer;display:flex;align-items:center;gap:7px;transition:color 0.15s,background 0.15s;position:relative;top:1px}
+  .tab:hover{color:var(--text)}.tab.active{color:var(--sk-teal);background:var(--surface);border-color:var(--border);border-bottom-color:var(--surface)}
+  .tab svg{width:13px;height:13px;fill:currentColor;flex-shrink:0}
+  .board-wrap{overflow-x:auto;padding:4px 4px 14px;margin:0 -4px}
+  .board{display:flex;gap:12px;align-items:flex-start;min-height:180px}
+  .board-col{flex:0 0 250px;width:250px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;max-height:calc(100vh - 250px);min-height:0;transition:border-color 0.15s,box-shadow 0.15s}
+  .board-col.drag-over{border-color:var(--sk-teal);box-shadow:0 0 0 2px var(--sk-teal-dim)}
+  .col-head{display:flex;align-items:center;gap:8px;padding:11px 12px;border-bottom:1px solid var(--border);background:var(--surface);border-radius:var(--radius) var(--radius) 0 0;flex-shrink:0}
+  .col-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .col-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em}
+  .col-count{margin-left:auto;font-size:10px;font-weight:600;color:var(--text-muted);background:var(--surface-3);border-radius:10px;padding:2px 8px}
+  .col-body{overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:70px}
+  .card{background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--gray);border-radius:var(--radius-sm);padding:10px 11px;transition:border-color 0.15s,opacity 0.15s}
+  .card.draggable{cursor:grab}.card.draggable:hover{border-color:var(--border-hover)}.card.dragging{opacity:0.35}
+  .card-title{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text);word-break:break-word;line-height:1.35}
+  .card-desc{font-size:11px;color:var(--text-muted);margin-top:5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card-foot{display:flex;align-items:center;gap:6px;margin-top:9px;flex-wrap:wrap}
+  .card-cat{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);background:var(--surface-3);border:1px solid var(--border);border-radius:4px;padding:2px 6px}
+  .card-pr{font-size:10px;font-weight:600}
+  .card-user{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text);margin-left:auto;max-width:100%;overflow:hidden}
+  .card-user .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .card-avatar{width:16px;height:16px;border-radius:50%;color:#0f1117;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-transform:uppercase}
+  .col-empty{font-size:11px;color:var(--text-muted);text-align:center;padding:16px 8px;border:1px dashed var(--border);border-radius:var(--radius-sm)}
+  .board-hint{font-size:11px;color:var(--text-muted);padding:2px 0 0}
+  @media(max-width:640px){.board-col{flex:0 0 80vw;width:80vw}}
+  body.board-view .main,body.board-view .header-inner{max-width:1560px}
+  /* themed scrollbars */
+  :root{color-scheme:dark}
+  *{scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  ::-webkit-scrollbar{width:11px;height:11px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-corner{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--border);border:3px solid transparent;background-clip:padding-box;border-radius:8px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--border-hover);border:3px solid transparent;background-clip:padding-box}
+  ::-webkit-scrollbar-thumb:active{background:var(--sk-teal);border:3px solid transparent;background-clip:padding-box}
+  .board-wrap{scrollbar-color:var(--surface-3) transparent}
+  .board-wrap::-webkit-scrollbar{height:13px}
+  .board-wrap::-webkit-scrollbar-thumb{background:var(--surface-3);border:3px solid transparent;background-clip:padding-box;border-radius:8px}
+  .board-wrap::-webkit-scrollbar-thumb:hover{background:var(--border-hover);border:3px solid transparent;background-clip:padding-box}
+  .board-wrap::-webkit-scrollbar-thumb:active{background:var(--sk-teal);border:3px solid transparent;background-clip:padding-box}
+  .col-body::-webkit-scrollbar{width:9px}
+  .col-body::-webkit-scrollbar-thumb{border-width:2px}
+  /* board fills the viewport so its horizontal rail is always reachable */
+  @media(min-height:520px){
+    body.board-view{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+    body.board-view .header{flex:0 0 auto}
+    body.board-view .main{flex:1 1 auto;min-height:0;min-width:0;width:100%;display:flex;flex-direction:column;padding-bottom:0}
+    body.board-view #content{flex:1 1 auto;min-height:0;min-width:0;display:flex;flex-direction:column}
+    body.board-view .board-wrap{flex:1 1 auto;min-height:0;min-width:0;overflow-x:auto;overflow-y:hidden;padding-bottom:0}
+    body.board-view .board{height:100%}
+    body.board-view .board-col{max-height:100%}
+    body.board-view .board-hint{flex:0 0 auto;padding:8px 0 0}
+    body.board-view .footer{flex:0 0 auto;padding:10px 0;margin-top:8px}
+  }
 </style>
 </head>
 <body>
@@ -46,6 +101,10 @@
   </div>
 </div></div></div>
 <div class="main">
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-view="list" onclick="setView('list')"><svg viewBox="0 0 16 16"><path d="M1 3h14v2H1V3zm0 4h14v2H1V7zm0 4h14v2H1v-2z"/></svg>List</button>
+    <button class="tab" data-view="board" onclick="setView('board')"><svg viewBox="0 0 16 16"><path d="M1 2h4v12H1V2zm5 0h4v8H6V2zm5 0h4v10h-4V2z"/></svg>Board</button>
+  </div>
   <div class="stats-bar" id="statsBar"></div>
   <div class="controls"><input class="search-input" id="searchInput" placeholder="Search function, description, contributor..." autocomplete="off"><select class="cat-select" id="catSelect"></select><button class="btn btn-accent" id="addBtn" style="display:none" onclick="openAdd()">+ Add</button></div>
   <div class="lead-tools" id="leadTools"><button class="btn btn-dim" onclick="exportJSON()">Export JSON</button><button class="btn btn-dim" onclick="importJSON()">Import JSON</button><input type="file" id="importFile" accept=".json" style="display:none" onchange="handleImport(event)"></div>
@@ -225,6 +284,7 @@ try {
 <script>
 const DATA_URL='tracker.json',STATUS_LABELS={available:'Available',claimed:'Claimed',in_progress:'In Progress',in_review:'In Review',merged:'Merged'},STATUS_COLORS={available:{c:'var(--green)',bg:'var(--green-bg)',b:'var(--green-border)'},claimed:{c:'var(--yellow)',bg:'var(--yellow-bg)',b:'var(--yellow-border)'},in_progress:{c:'var(--blue)',bg:'var(--blue-bg)',b:'var(--blue-border)'},in_review:{c:'var(--purple)',bg:'var(--purple-bg)',b:'var(--purple-border)'},merged:{c:'var(--gray)',bg:'var(--gray-bg)',b:'var(--gray-border)'}},CATEGORIES=["Animations","Audio","Camera","Color","Generative AI","Geometry","Graphics","Input","Interface","JSON","Logging","Networking","Physics","Raspberry","Resource Bundles","Resources","Sprites","Terminal","Timers","Types","Utilities","Windows","Other"];
 let data={entries:[]},filterStatus='all',filterCategory='all',searchQuery='',isLead=false,editingId=null;
+let currentView=localStorage.getItem('tracker-view')||'list',dragEntryId=null;
 const searchInput=document.getElementById('searchInput'),catSelect=document.getElementById('catSelect'),statsBar=document.getElementById('statsBar'),content=document.getElementById('content'),addBtn=document.getElementById('addBtn'),leadTools=document.getElementById('leadTools');
 catSelect.innerHTML='<option value="all">All categories</option>'+CATEGORIES.map(c=>`<option value="${c}">${c}</option>`).join('');
 const mCatSel=document.getElementById('mCategory');CATEGORIES.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;mCatSel.appendChild(o)});
@@ -256,7 +316,84 @@ function applyFirebaseClaims(entries) {
 
 function renderStats(){const entries=applyFirebaseClaims(data.entries||[]);const stats={};Object.keys(STATUS_LABELS).forEach(s=>stats[s]=entries.filter(e=>e.status===s).length);let h='';if(window._firebaseReady){h+='<span class="live-dot"></span> '}else if(window._fbConnected===false){h+='<span class="live-dot offline"></span> '}Object.entries(STATUS_LABELS).forEach(([k,l])=>{const sc=STATUS_COLORS[k],a=filterStatus===k,cl=filterStatus==='all'?'':(a?'active':'dimmed');h+=`<button class="stat-btn ${cl}" style="color:${sc.c};border-color:${a?sc.b:'var(--border)'};background:${a?sc.bg:'transparent'}" onclick="toggleStatus('${k}')">${l}: ${stats[k]||0}</button>`});if(filterStatus!=='all')h+=`<button class="stat-btn" style="color:var(--text-muted)" onclick="toggleStatus('all')">show all</button>`;statsBar.innerHTML=h}
 
-function renderContent(){const entries=applyFirebaseClaims(data.entries||[]);const filtered=entries.filter(e=>{if(filterStatus!=='all'&&e.status!==filterStatus)return false;if(filterCategory!=='all'&&e.category!==filterCategory)return false;if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}return true}),groups={};filtered.forEach(e=>{if(!groups[e.category])groups[e.category]=[];groups[e.category].push(e)});const cats=Object.keys(groups).sort();let h='';if(!filtered.length){h+=entries.length===0?'<div class="empty"><p style="font-size:14px;margin-bottom:8px">No data loaded.</p><p style="font-size:12px">Enable Claim mode and Import JSON.</p></div>':'<div class="empty"><p style="font-size:13px">No entries match your filters.</p></div>'}else{cats.forEach(cat=>{const ce=groups[cat],ac=ce.filter(e=>e.status==='available').length;h+='<div class="cat-group">';h+=`<div class="cat-header"><span>${esc(cat)}</span>${ac>0?`<span class="avail">${ac} available</span>`:''}`;h+='</div><div class="cat-entries">';ce.forEach(e=>{h+=`<div class="entry"><div class="entry-main"><div class="entry-top"><span class="func-name">${esc(e.functionName)}</span><span class="badge badge-${e.status}">${STATUS_LABELS[e.status]||e.status}</span><span class="cat-tag">${esc(e.category)}</span></div>`;if(e.description&&!e.description.startsWith('(add description'))h+=`<div class="entry-desc">${esc(e.description)}</div>`;if(e.claimedBy){h+=`<div class="entry-meta">&rarr; ${esc(e.claimedBy)}`;if(e.prLink)h+=` <a href="${esc(e.prLink)}" target="_blank" rel="noopener">PR &nearr;</a>`;h+='</div>'}h+='</div>';if(isLead)h+=`<div class="edit-btns"><button class="icon-btn" onclick="openEdit('${e.id}')">✎</button><button class="icon-btn del" onclick="deleteEntry('${e.id}')">✕</button></div>`;h+='</div>'});h+='</div></div>'})}const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);h+=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;h+='</div>';content.innerHTML=h;renderStats()}
+function renderList(){const entries=applyFirebaseClaims(data.entries||[]);const filtered=entries.filter(e=>{if(filterStatus!=='all'&&e.status!==filterStatus)return false;if(filterCategory!=='all'&&e.category!==filterCategory)return false;if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}return true}),groups={};filtered.forEach(e=>{if(!groups[e.category])groups[e.category]=[];groups[e.category].push(e)});const cats=Object.keys(groups).sort();let h='';if(!filtered.length){h+=entries.length===0?'<div class="empty"><p style="font-size:14px;margin-bottom:8px">No data loaded.</p><p style="font-size:12px">Enable Claim mode and Import JSON.</p></div>':'<div class="empty"><p style="font-size:13px">No entries match your filters.</p></div>'}else{cats.forEach(cat=>{const ce=groups[cat],ac=ce.filter(e=>e.status==='available').length;h+='<div class="cat-group">';h+=`<div class="cat-header"><span>${esc(cat)}</span>${ac>0?`<span class="avail">${ac} available</span>`:''}`;h+='</div><div class="cat-entries">';ce.forEach(e=>{h+=`<div class="entry"><div class="entry-main"><div class="entry-top"><span class="func-name">${esc(e.functionName)}</span><span class="badge badge-${e.status}">${STATUS_LABELS[e.status]||e.status}</span><span class="cat-tag">${esc(e.category)}</span></div>`;if(e.description&&!e.description.startsWith('(add description'))h+=`<div class="entry-desc">${esc(e.description)}</div>`;if(e.claimedBy){h+=`<div class="entry-meta">&rarr; ${esc(e.claimedBy)}`;if(e.prLink)h+=` <a href="${esc(e.prLink)}" target="_blank" rel="noopener">PR &nearr;</a>`;h+='</div>'}h+='</div>';if(isLead)h+=`<div class="edit-btns"><button class="icon-btn" onclick="openEdit('${e.id}')">✎</button><button class="icon-btn del" onclick="deleteEntry('${e.id}')">✕</button></div>`;h+='</div>'});h+='</div></div>'})}const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);h+=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;h+='</div>';content.innerHTML=h;renderStats()}
+
+function renderContent(){currentView==='board'?renderBoard():renderList()}
+
+function setView(v){currentView=v;localStorage.setItem('tracker-view',v);syncTabs();renderContent();window.scrollTo({top:0,behavior:'smooth'})}
+function syncShell(){document.body.classList.toggle('board-view',currentView==='board')}
+function syncTabs(){document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===currentView));syncShell()}
+
+function matchesFilters(e){
+  if(filterCategory!=='all'&&e.category!==filterCategory)return false;
+  if(searchQuery){const q=searchQuery.toLowerCase();return e.functionName.toLowerCase().includes(q)||(e.description||'').toLowerCase().includes(q)||(e.claimedBy||'').toLowerCase().includes(q)}
+  return true;
+}
+function hasRealDesc(d){return d&&!d.startsWith('(add description')&&!d.startsWith('Describe the example')}
+function footerHTML(entries){const st={};Object.keys(STATUS_LABELS).forEach(s=>st[s]=entries.filter(e=>e.status===s).length);let h=`<div class="footer">${entries.length} functions &middot; ${st.available||0} available &middot; <a href="https://splashkit.io/api/" target="_blank">splashkit.io</a>`;if(data.lastUpdated)h+=` &middot; synced ${new Date(data.lastUpdated).toLocaleDateString()}`;return h+'</div>'}
+
+function cardHTML(e){
+  const sc=STATUS_COLORS[e.status]||STATUS_COLORS.available;
+  const drag=isLead?` draggable="true" ondragstart="cardDragStart(event,'${e.id}')" ondragend="cardDragEnd(event)"`:'';
+  const click=isLead?` onclick="openEdit('${e.id}')"`:'';
+  let h=`<div class="card${isLead?' draggable':''}"${drag}${click} style="border-left-color:${sc.c}">`;
+  h+=`<div class="card-title">${esc(e.functionName)}</div>`;
+  if(hasRealDesc(e.description))h+=`<div class="card-desc">${esc(e.description)}</div>`;
+  h+='<div class="card-foot">';
+  h+=`<span class="card-cat">${esc(e.category)}</span>`;
+  if(e.prLink)h+=`<a class="card-pr" href="${esc(e.prLink)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">PR &nearr;</a>`;
+  if(e.claimedBy)h+=`<span class="card-user" title="${esc(e.claimedBy)}"><span class="card-avatar" style="background:${sc.c}">${esc(e.claimedBy.slice(0,1))}</span><span class="n">${esc(e.claimedBy)}</span></span>`;
+  h+='</div></div>';
+  return h;
+}
+
+function renderBoard(){
+  const entries=applyFirebaseClaims(data.entries||[]);
+  const filtered=entries.filter(matchesFilters);
+  const byStatus={};Object.keys(STATUS_LABELS).forEach(s=>byStatus[s]=[]);
+  filtered.forEach(e=>{(byStatus[e.status]||byStatus.available).push(e)});
+  const cols=Object.keys(STATUS_LABELS).filter(s=>filterStatus==='all'||filterStatus===s);
+  let h='<div class="board-wrap"><div class="board">';
+  cols.forEach(s=>{
+    const sc=STATUS_COLORS[s],list=byStatus[s];
+    h+=`<div class="board-col" data-status="${s}" ondragover="boardDragOver(event)" ondragleave="boardDragLeave(event)" ondrop="boardDrop(event,'${s}')">`;
+    h+=`<div class="col-head"><span class="col-dot" style="background:${sc.c}"></span><span class="col-title" style="color:${sc.c}">${STATUS_LABELS[s]}</span><span class="col-count">${list.length}</span></div>`;
+    h+='<div class="col-body">';
+    if(!list.length)h+='<div class="col-empty">'+(isLead?'Drop a card here':'Nothing here')+'</div>';
+    list.forEach(e=>{h+=cardHTML(e)});
+    h+='</div></div>';
+  });
+  h+='</div></div>';
+  h+=isLead?'<div class="board-hint">Drag a card to another column to change its status, or click it to edit the claim.</div>'
+           :'<div class="board-hint">Turn on <strong>Claim mode</strong> above to drag cards and claim functions.</div>';
+  h+=footerHTML(entries);
+  content.innerHTML=h;
+  const wrap=content.querySelector('.board-wrap');
+  if(wrap)wrap.addEventListener('dragover',ev=>{const r=wrap.getBoundingClientRect(),edge=64;if(ev.clientX<r.left+edge)wrap.scrollLeft-=20;else if(ev.clientX>r.right-edge)wrap.scrollLeft+=20});
+  renderStats();
+}
+
+function cardDragStart(ev,id){dragEntryId=id;ev.dataTransfer.effectAllowed='move';try{ev.dataTransfer.setData('text/plain',id)}catch(_){}ev.currentTarget.classList.add('dragging')}
+function cardDragEnd(ev){ev.currentTarget.classList.remove('dragging');document.querySelectorAll('.board-col.drag-over').forEach(c=>c.classList.remove('drag-over'))}
+function boardDragOver(ev){if(!dragEntryId)return;ev.preventDefault();ev.dataTransfer.dropEffect='move';ev.currentTarget.classList.add('drag-over')}
+function boardDragLeave(ev){if(!ev.currentTarget.contains(ev.relatedTarget))ev.currentTarget.classList.remove('drag-over')}
+function boardDrop(ev,status){ev.preventDefault();ev.currentTarget.classList.remove('drag-over');const id=dragEntryId||ev.dataTransfer.getData('text/plain');dragEntryId=null;if(id)moveEntryToStatus(id,status)}
+
+function moveEntryToStatus(id,status){
+  const e=data.entries.find(x=>x.id===id);
+  if(!e||e.status===status)return;
+  if(window._firebaseReady){
+    if(status!=='available'&&!window._currentUser){alert('Sign in with GitHub to claim functions.');return}
+    if(!window._canModifyClaim(e.functionName)){alert('This function is claimed by someone else. Only the owner or a lead can change it.');return}
+  }
+  e.status=status;
+  if(status!=='available'&&!e.claimedBy&&window._currentUser){e.claimedBy=window._currentUser.githubUsername||window._currentUser.displayName||''}
+  data.lastUpdated=new Date().toISOString();
+  saveLocal();
+  if(window._firebaseReady){status==='available'?window._fbRemoveClaim(e.functionName):window._fbSaveClaim(e.functionName,e)}
+  renderContent();
+}
+
 function toggleStatus(s){filterStatus=filterStatus===s?'all':s;renderContent()}
 function openEdit(id){editingId=id;const e=data.entries.find(x=>x.id===id);if(!e)return;if(window._firebaseReady && e.status!=='available' && !window._canModifyClaim(e.functionName)){alert('This function is claimed by someone else. Only the owner or a lead can edit it.');return}document.getElementById('modalTitle').textContent='Edit Entry';document.getElementById('mFuncName').value=e.functionName||'';document.getElementById('mCategory').value=e.category||'Other';document.getElementById('mDesc').value=e.description||'';document.getElementById('mStatus').value=e.status||'available';document.getElementById('mClaimedBy').value=e.claimedBy||(window._currentUser?window._currentUser.githubUsername||'':'');document.getElementById('mPrLink').value=e.prLink||'';document.getElementById('editModal').style.display='flex'}
 function openAdd(){editingId=null;document.getElementById('modalTitle').textContent='Add Entry';document.getElementById('mFuncName').value='';document.getElementById('mCategory').value=filterCategory!=='all'?filterCategory:'Graphics';document.getElementById('mDesc').value='';document.getElementById('mStatus').value='available';document.getElementById('mClaimedBy').value='';document.getElementById('mPrLink').value='';document.getElementById('editModal').style.display='flex'}
@@ -298,6 +435,7 @@ function exportJSON(){const b=new Blob([JSON.stringify(data,null,2)],{type:'appl
 function importJSON(){document.getElementById('importFile').click()}
 function handleImport(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=function(ev){try{const d=JSON.parse(ev.target.result);if(d.entries&&Array.isArray(d.entries)){data=d;data.lastUpdated=new Date().toISOString();saveLocal();renderContent()}else alert('Invalid JSON.')}catch(err){alert('Invalid JSON file.')}};r.readAsText(f);e.target.value=''}
 document.getElementById('editModal').addEventListener('click',function(e){if(e.target===this)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+syncTabs();
 loadData();
 </script>
 </body>
