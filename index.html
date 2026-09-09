@@ -57,6 +57,22 @@
   .board-hint{font-size:11px;color:var(--text-muted);padding:2px 0 0}
   @media(max-width:640px){.board-col{flex:0 0 80vw;width:80vw}}
   body.board-view .main,body.board-view .header-inner{max-width:1560px}
+  /* themed scrollbars */
+  :root{color-scheme:dark}
+  *{scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+  ::-webkit-scrollbar{width:11px;height:11px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-corner{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--border);border:3px solid transparent;background-clip:padding-box;border-radius:8px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--border-hover);border:3px solid transparent;background-clip:padding-box}
+  ::-webkit-scrollbar-thumb:active{background:var(--sk-teal);border:3px solid transparent;background-clip:padding-box}
+  .board-wrap{scrollbar-color:var(--surface-3) transparent}
+  .board-wrap::-webkit-scrollbar{height:13px}
+  .board-wrap::-webkit-scrollbar-thumb{background:var(--surface-3);border:3px solid transparent;background-clip:padding-box;border-radius:8px}
+  .board-wrap::-webkit-scrollbar-thumb:hover{background:var(--border-hover);border:3px solid transparent;background-clip:padding-box}
+  .board-wrap::-webkit-scrollbar-thumb:active{background:var(--sk-teal);border:3px solid transparent;background-clip:padding-box}
+  .col-body::-webkit-scrollbar{width:9px}
+  .col-body::-webkit-scrollbar-thumb{border-width:2px}
 </style>
 </head>
 <body>
