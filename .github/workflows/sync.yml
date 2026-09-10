@@ -2,8 +2,8 @@ name: Sync Tracker
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # runs daily at midnight UTC (10am AEST)
-  workflow_dispatch:       # manual trigger button in GitHub Actions tab
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SYNC_PAT }}
 
       - uses: actions/setup-node@v4
         with:
