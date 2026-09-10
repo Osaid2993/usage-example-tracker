@@ -399,9 +399,34 @@ function openEdit(id){editingId=id;const e=data.entries.find(x=>x.id===id);if(!e
 function openAdd(){editingId=null;document.getElementById('modalTitle').textContent='Add Entry';document.getElementById('mFuncName').value='';document.getElementById('mCategory').value=filterCategory!=='all'?filterCategory:'Graphics';document.getElementById('mDesc').value='';document.getElementById('mStatus').value='available';document.getElementById('mClaimedBy').value='';document.getElementById('mPrLink').value='';document.getElementById('editModal').style.display='flex'}
 function closeModal(){document.getElementById('editModal').style.display='none'}
 
+function checkDuplicate(funcName, excludeId) {
+  const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+  const input = normalize(funcName);
+  if (!input) return null;
+  const entries = applyFirebaseClaims(data.entries || []);
+  for (const e of entries) {
+    if (e.id === excludeId) continue;
+    if (e.status === 'available') continue;
+    const existing = normalize(e.functionName);
+    if (input === existing) return e;
+    if (input.includes(existing) || existing.includes(input)) return e;
+  }
+  return null;
+}
+
 function saveModal(){
   const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};
   if(!entry.functionName)return;
+
+  // Block duplicates when creating a new claim
+  if(!editingId && entry.status !== 'available'){
+    const dup = checkDuplicate(entry.functionName, null);
+    if(dup){
+      const who = dup.claimedBy ? ' by ' + dup.claimedBy : '';
+      alert('"' + dup.functionName + '" is already ' + dup.status.replace(/_/g, ' ') + who + '.\n\nPick a different function to work on!');
+      return;
+    }
+  }
 
   // Check ownership before allowing changes to claimed functions
   if(window._firebaseReady && entry.status !== 'available' && !window._currentUser){
