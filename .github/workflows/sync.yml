@@ -32,4 +32,5 @@ jobs:
           git diff --quiet tracker.json && echo "No changes" && exit 0
           git add tracker.json
           git commit -m "Auto-sync tracker $(date -u +%Y-%m-%d)"
+          git pull --rebase
           git push
