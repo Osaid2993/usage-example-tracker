@@ -13,11 +13,11 @@
     {
       "id": "auto_2",
       "functionName": "draw_circle_on_bitmap",
-      "description": "This change adds a new C++ SDL2/SDL_ttf usage example that demonstrates that how to Draw circle on bitmap successfully.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "pradeepkumara",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/522",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -43,41 +43,41 @@
     {
       "id": "auto_5",
       "functionName": "fill_circle_on_bitmap",
-      "description": "Describe the example and what it demonstrates.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/459",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_6",
       "functionName": "fill_circle_on_window",
-      "description": "Describe the example and what it demonstrates.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/458",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_7",
       "functionName": "current_clip",
-      "description": "This PR adds a usage example for the `current_clip` function demonstrating how to:",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "nielsent478",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/487",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_8",
       "functionName": "pop_clip",
-      "description": "This demonstrates how Pop_Clip restores the previous clipping region after using Set_Clip to limit rendering.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "nielsent478",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/418",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -123,11 +123,11 @@
     {
       "id": "auto_13",
       "functionName": "option_draw_to",
-      "description": "This change introduces a set of example programs that demonstrate drawing random \"bubbles\" (colored circles) in a window using different languages and graphical libraries. The main motivation is to pr",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/529",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -383,11 +383,11 @@
     {
       "id": "auto_39",
       "functionName": "refresh_screen",
-      "description": "Added a simple house drawing application using SDL2 in C++. This code demonstrates basic SDL2 functionalities, including creating a window, rendering shapes (rectangles and triangles), and introducing",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "sakshamror",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/520",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -823,11 +823,11 @@
     {
       "id": "auto_83",
       "functionName": "draw_quad_on_bitmap",
-      "description": "Describe the example and what it demonstrates.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/457",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -913,11 +913,11 @@
     {
       "id": "auto_92",
       "functionName": "fill_rectangle_on_bitmap",
-      "description": "In this pull request, i have added a Beyond SplashKit version of the `fill_rectangle_on_bitmap` usage example.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "dhruvjanghu",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/561",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -1103,11 +1103,11 @@
     {
       "id": "auto_111",
       "functionName": "draw_triangle_on_window",
-      "description": "This pull request adds a new C++ example: drawing quads on a window using SDL2, following the \"beyond SplashKit\" style and template.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/550",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -1123,11 +1123,11 @@
     {
       "id": "auto_113",
       "functionName": "fill_triangle_on_bitmap",
-      "description": "This PR adds a **Beyond SplashKit version** of the `fill_triangle_on_bitmap` usage example.",
+      "description": "",
       "category": "Graphics",
       "status": "available",
-      "claimedBy": "dhruvjanghu",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/150",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -1433,11 +1433,11 @@
     {
       "id": "auto_144",
       "functionName": "play_sound_effect",
-      "description": "This PR offers a usage example in C++ for play_sound_effect.",
+      "description": "",
       "category": "Audio",
       "status": "available",
-      "claimedBy": "DerDieDasDeakin",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/33",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -1483,11 +1483,11 @@
     {
       "id": "auto_149",
       "functionName": "stop_sound_effect",
-      "description": "This PR builds upon other examples and offers a usage example in C++ for stop_sound_effect.",
+      "description": "",
       "category": "Audio",
       "status": "available",
-      "claimedBy": "DerDieDasDeakin",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/34",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -2853,11 +2853,11 @@
     {
       "id": "auto_286",
       "functionName": "color_red",
-      "description": "This PR adds comprehensive usage examples for the `color_red()` function in SplashKit. The examples demonstrate how to use the red color for drawing various shapes including circles, rectangles, trian",
+      "description": "",
       "category": "Color",
       "status": "available",
-      "claimedBy": "222448082Ashen",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/650",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3143,11 +3143,11 @@
     {
       "id": "auto_315",
       "functionName": "color_to_string",
-      "description": "(add description for color_to_string)",
+      "description": "",
       "category": "Color",
       "status": "available",
-      "claimedBy": "SEBINSHASAMEERSHA",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/824",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3643,11 +3643,11 @@
     {
       "id": "auto_365",
       "functionName": "create_animation",
-      "description": "**Splashkit Function:** `create_animation`",
+      "description": "",
       "category": "Animations",
       "status": "available",
-      "claimedBy": "222448082Ashen",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/615",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3753,11 +3753,11 @@
     {
       "id": "auto_376",
       "functionName": "free_timer",
-      "description": "(add description for free_timer)",
+      "description": "",
       "category": "Timers",
       "status": "available",
-      "claimedBy": "eds-zx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/125",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3773,21 +3773,21 @@
     {
       "id": "auto_378",
       "functionName": "pause_timer",
-      "description": "Code Usage Examples for: Pause timer funciton",
+      "description": "",
       "category": "Timers",
       "status": "available",
-      "claimedBy": "eds-zx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/52",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_379",
       "functionName": "reset_timer",
-      "description": "Code Usage Examples for: Reset timer function",
+      "description": "",
       "category": "Timers",
       "status": "available",
-      "claimedBy": "eds-zx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/53",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3803,11 +3803,11 @@
     {
       "id": "auto_381",
       "functionName": "start_timer",
-      "description": "Code Usage Examples for: Start timer function",
+      "description": "",
       "category": "Timers",
       "status": "available",
-      "claimedBy": "eds-zx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/55",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3873,21 +3873,21 @@
     {
       "id": "auto_388",
       "functionName": "close_all_windows",
-      "description": "This is the usage example done by me for function close_all_windows() in API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "ajoju",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/66",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_389",
       "functionName": "close_current_window",
-      "description": "This is the usage example done by me for function close_current_window() in API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "ajoju",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/67",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3913,11 +3913,11 @@
     {
       "id": "auto_392",
       "functionName": "current_window_has_border",
-      "description": "**Splashkit Function:** `current_window_has_border`",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "Osaid2993",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/71",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3933,11 +3933,11 @@
     {
       "id": "auto_394",
       "functionName": "current_window_is_fullscreen",
-      "description": "This is the usage example done by me for function current_window_is_fullscreen() in API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "ajoju",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/73",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -3953,11 +3953,11 @@
     {
       "id": "auto_396",
       "functionName": "current_window_toggle_border",
-      "description": "This is the usage example done by me for function current_window_toggle_border() in API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "ajoju",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/75",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4003,31 +4003,31 @@
     {
       "id": "auto_401",
       "functionName": "has_window",
-      "description": "This is the usage example done by me for function has_window(string caption) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/88",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_402",
       "functionName": "is_current_window",
-      "description": "This is the usage example done by me for function is_current_window(window wind) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/90",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_403",
       "functionName": "move_current_window_to",
-      "description": "This is the usage example done by me for function move_current_window_to(int x, int y) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/92",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4053,31 +4053,31 @@
     {
       "id": "auto_406",
       "functionName": "resize_current_window",
-      "description": "This is the usage example done by me for function resize_current_window(int width, int height) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/101",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_407",
       "functionName": "resize_window",
-      "description": "This is the usage example done by me for function resize_window(window wind, int width, int height) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/103",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_408",
       "functionName": "set_current_window",
-      "description": "This is the usage example done by me for function set_current_window(window wind) in the API group windows section.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/107",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4093,21 +4093,21 @@
     {
       "id": "auto_410",
       "functionName": "window_close_requested",
-      "description": "Fixes a bug where the application would crash when loading images with specific formats, improving overall stability.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/86",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_411",
       "functionName": "window_has_border",
-      "description": "Updates the documentation to include new examples and clarifications, helping developers better understand and use the API.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/91",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4123,81 +4123,81 @@
     {
       "id": "auto_413",
       "functionName": "window_height",
-      "description": "Integrates a new logging system that provides more detailed runtime information, aiding in debugging and monitoring.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/98",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_414",
       "functionName": "window_is_fullscreen",
-      "description": "Fixes a memory leak issue in the resource management module, improving the application's memory efficiency.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/102",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_415",
       "functionName": "window_named",
-      "description": "Introduces a new module for handling network communications, enabling multiplayer and online features.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/106",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_416",
       "functionName": "window_position",
-      "description": "Updates the build scripts to support the latest versions of dependencies, ensuring compatibility and security.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/108",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_417",
       "functionName": "window_set_icon",
-      "description": "Adds a new animation system that simplifies creating and managing animated sprites, enhancing visual effects.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/110",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_418",
       "functionName": "window_toggle_border",
-      "description": "Implements dark mode for the application interface, providing a visually appealing option for users who prefer a darker theme.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/111",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_419",
       "functionName": "window_toggle_fullscreen",
-      "description": "Adds support for cloud storage integration, allowing users to save and load data from cloud services.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/113",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_420",
       "functionName": "window_width",
-      "description": "Adds comprehensive logging for network activities, aiding in the diagnosis and troubleshooting of connectivity issues.",
+      "description": "",
       "category": "Windows",
       "status": "available",
-      "claimedBy": "AmosSaji",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/115",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4313,11 +4313,11 @@
     {
       "id": "auto_432",
       "functionName": "create_sprite",
-      "description": "This pull request adds a new set of example files demonstrating how to simulate sprite pack switching in SplashKit, in multiple languages (C++, C#, Python), along with the required image assets. The e",
+      "description": "",
       "category": "Sprites",
       "status": "available",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/548",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4363,11 +4363,11 @@
     {
       "id": "auto_437",
       "functionName": "move_sprite",
-      "description": "Splashkit Function: `ray_circle_intersect_distance`",
+      "description": "",
       "category": "Sprites",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/485",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -4973,11 +4973,11 @@
     {
       "id": "auto_498",
       "functionName": "sprite_set_velocity",
-      "description": "This is a usage example of the function sprite_set_velocity to set a small horizontal velocity for a sprite on a window.",
+      "description": "",
       "category": "Sprites",
       "status": "available",
-      "claimedBy": "huyhuynh2319",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/307",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5123,11 +5123,11 @@
     {
       "id": "auto_513",
       "functionName": "sprite_width",
-      "description": "**Splashkit Function:** `load_sprite`, `draw_sprite`, `update_sprite`, `sprite_x`, `sprite_y`, `sprite_dx`, `sprite_dy`",
+      "description": "",
       "category": "Sprites",
       "status": "available",
-      "claimedBy": "222448082Ashen",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/653",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5193,11 +5193,11 @@
     {
       "id": "auto_520",
       "functionName": "center_point",
-      "description": "Add new usage example and show how to find the center point for circles.",
+      "description": "",
       "category": "Geometry",
       "status": "available",
-      "claimedBy": "Jinx-means-jinx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/318",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5373,11 +5373,11 @@
     {
       "id": "auto_538",
       "functionName": "line_intersects_rect",
-      "description": "Added a new usage example demonstrating the use of line_intersects_rect in SplashKit. This example allows users to interactively drag the endpoints of a line and observe whether it intersects a fixed ",
+      "description": "",
       "category": "Geometry",
       "status": "available",
-      "claimedBy": "prb616",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/434",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5433,11 +5433,11 @@
     {
       "id": "auto_544",
       "functionName": "lines_from",
-      "description": "This example demonstrates the use of the lines_from function in SplashKit to extract and interact with the edges of a rectangle. It visualizes how each edge can be individually styled and responds dyn",
+      "description": "",
       "category": "Geometry",
       "status": "available",
-      "claimedBy": "Samwong077",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/437",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5643,11 +5643,11 @@
     {
       "id": "auto_565",
       "functionName": "rectangle_center",
-      "description": "This PR adds a full usage example for the rectangle_center function in:",
+      "description": "",
       "category": "Geometry",
       "status": "available",
-      "claimedBy": "sylvia0929",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/555",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5743,11 +5743,11 @@
     {
       "id": "auto_575",
       "functionName": "tangent",
-      "description": "This pull request introduces Program Idea 1: Calculate and display the two tangent points from an external point to a circle. The program has been implemented in C++, Python, C# OOP, and C# Top-Level ",
+      "description": "",
       "category": "Geometry",
       "status": "available",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/426",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -5883,11 +5883,11 @@
     {
       "id": "auto_589",
       "functionName": "json_read_array",
-      "description": "The `json_read_number_as_int` function",
+      "description": "",
       "category": "JSON",
       "status": "available",
-      "claimedBy": "huyhuynh2319",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/513",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -6403,21 +6403,21 @@
     {
       "id": "auto_641",
       "functionName": "open_connection",
-      "description": "Describe the example and what it demonstrates.",
+      "description": "",
       "category": "Networking",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/500",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_642",
       "functionName": "read_message",
-      "description": "This pull request adds a complete set of lightweight, self-contained examples demonstrating SplashKit’s networking API—centered on the read_message function—across C++, Python, and C#. It includes a m",
+      "description": "",
       "category": "Networking",
       "status": "available",
-      "claimedBy": "sakshamror",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/538",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -6613,11 +6613,11 @@
     {
       "id": "auto_662",
       "functionName": "to_lowercase",
-      "description": "Code Usage Examples for: To lowercase function",
+      "description": "",
       "category": "Utilities",
       "status": "available",
-      "claimedBy": "eds-zx",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/50",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -6813,21 +6813,21 @@
     {
       "id": "auto_682",
       "functionName": "angle_between",
-      "description": "**Splashkit Function:** `angle_between`",
+      "description": "",
       "category": "Physics",
       "status": "available",
-      "claimedBy": "Osaid2993",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/737",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
       "id": "auto_683",
       "functionName": "dot_product",
-      "description": "**Splashkit Function:** `dot_product`",
+      "description": "",
       "category": "Physics",
       "status": "available",
-      "claimedBy": "Osaid2993",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/741",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -7223,11 +7223,11 @@
     {
       "id": "auto_723",
       "functionName": "end_panel",
-      "description": "Splashkit Function: `end_panel`",
+      "description": "",
       "category": "Interface",
       "status": "available",
-      "claimedBy": "Sufian-code",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/501",
+      "claimedBy": "",
+      "prLink": "",
       "createdAt": "auto-scraped"
     },
     {
@@ -7974,9 +7974,9 @@
       "functionName": "circle_quad_intersect",
       "category": "Geometry",
       "status": "available",
-      "description": "This example demonstrates the use of the `CircleQuadIntersect` function in SplashKit.",
-      "claimedBy": "Samwong077",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/445"
+      "description": "",
+      "claimedBy": "",
+      "prLink": ""
     },
     {
       "functionName": "closest_point_on_line_from_circle",
@@ -8022,9 +8022,9 @@
       "functionName": "tangent_points",
       "category": "Geometry",
       "status": "available",
-      "description": "This pull request introduces Program Idea 1: Calculate and display the two tangent points from an external point to a circle. The program has been implemented in C++, Python, C# OOP, and C# Top-Level ",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/447"
+      "description": "",
+      "claimedBy": "",
+      "prLink": ""
     },
     {
       "functionName": "normal",
@@ -8142,9 +8142,9 @@
       "functionName": "add_column_relative",
       "category": "Interface",
       "status": "available",
-      "description": "Added new usage examples for the add_column_relative and add_column functions in SplashKit, demonstrating how to display columns with increasing percentage widths. Examples include C++, C# (top-level ",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/536"
+      "description": "",
+      "claimedBy": "",
+      "prLink": ""
     },
     {
       "functionName": "open_popup",
@@ -8894,9 +8894,9 @@
       "functionName": "create_sprite_pack",
       "category": "Sprites",
       "status": "available",
-      "description": "This pull request adds a new set of example files demonstrating how to simulate sprite pack switching in SplashKit, in multiple languages (C++, C#, Python), along with the required image assets. The e",
-      "claimedBy": "Triet-coder",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/474"
+      "description": "",
+      "claimedBy": "",
+      "prLink": ""
     },
     {
       "functionName": "current_sprite_pack",
@@ -9198,10 +9198,10 @@
       "functionName": "refresh_window",
       "category": "Windows",
       "status": "available",
-      "description": "This is the usage example done by me for function refresh_window(window wind, unsigned int target_fps) in the API group windows section.",
-      "claimedBy": "benmathewthomas",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/97"
+      "description": "",
+      "claimedBy": "",
+      "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-10T11:05:51.125Z"
+  "lastUpdated": "2026-09-10T18:08:18.516Z"
 }
