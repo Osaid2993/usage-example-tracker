@@ -99,6 +99,7 @@ async function main() {
     let newStatus = entry.status;
     if (isMerged) newStatus = 'merged';
     else if (isOpen) newStatus = 'in_review';
+    else if (!isOpen && !isMerged) continue; // skip closed/rejected PRs
     if (statusRank[newStatus] >= statusRank[entry.status]) {
       const old = entry.status;
       entry.status = newStatus;
