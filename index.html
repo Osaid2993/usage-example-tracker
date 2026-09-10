@@ -382,6 +382,11 @@ function boardDrop(ev,status){ev.preventDefault();ev.currentTarget.classList.rem
 function moveEntryToStatus(id,status){
   const e=data.entries.find(x=>x.id===id);
   if(!e||e.status===status)return;
+  const statusRank={available:0,claimed:1,in_progress:2,in_review:3,merged:4};
+  // Only allow forward movement unless lead
+  if(statusRank[status]<statusRank[e.status]&&!window._isLeadUser){
+    alert('You can only move functions forward (e.g. claimed \u2192 in progress \u2192 in review).\n\nContact a lead if this needs to be reverted.');return;
+  }
   // Block duplicate claims via drag
   if(status!=='available'){
     const dup=checkDuplicate(e.functionName,e.id);
@@ -423,14 +428,12 @@ function saveModal(){
   const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};
   if(!entry.functionName)return;
 
-  // Block duplicates when claiming (new or editing to non-available)
-  if(entry.status !== 'available'){
-    const dup = checkDuplicate(entry.functionName, editingId);
-    if(dup){
-      const who = dup.claimedBy ? ' by ' + dup.claimedBy : '';
-      alert('"' + dup.functionName + '" is already ' + dup.status.replace(/_/g, ' ') + who + '.\n\nPick a different function to work on!');
-      return;
-    }
+  // Block duplicates - any status, if function already exists in a non-available state
+  const dup = checkDuplicate(entry.functionName, editingId);
+  if(dup){
+    const who = dup.claimedBy ? ' by ' + dup.claimedBy : '';
+    alert('"' + dup.functionName + '" is already ' + dup.status.replace(/_/g, ' ') + who + '.\n\nPick a different function to work on!');
+    return;
   }
 
   // Check ownership before allowing changes to claimed functions
