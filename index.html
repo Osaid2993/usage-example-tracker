@@ -382,6 +382,11 @@ function boardDrop(ev,status){ev.preventDefault();ev.currentTarget.classList.rem
 function moveEntryToStatus(id,status){
   const e=data.entries.find(x=>x.id===id);
   if(!e||e.status===status)return;
+  // Block duplicate claims via drag
+  if(status!=='available'){
+    const dup=checkDuplicate(e.functionName,e.id);
+    if(dup){alert('"'+dup.functionName+'" is already '+dup.status.replace(/_/g,' ')+(dup.claimedBy?' by '+dup.claimedBy:'')+'.\n\nPick a different function to work on!');return}
+  }
   if(window._firebaseReady){
     if(status!=='available'&&!window._currentUser){alert('Sign in with GitHub to claim functions.');return}
     if(!window._canModifyClaim(e.functionName)){alert('This function is claimed by someone else. Only the owner or a lead can change it.');return}
@@ -418,9 +423,9 @@ function saveModal(){
   const entry={functionName:document.getElementById('mFuncName').value.trim(),category:document.getElementById('mCategory').value,description:document.getElementById('mDesc').value.trim(),status:document.getElementById('mStatus').value,claimedBy:document.getElementById('mClaimedBy').value.trim(),prLink:document.getElementById('mPrLink').value.trim()};
   if(!entry.functionName)return;
 
-  // Block duplicates when creating a new claim
-  if(!editingId && entry.status !== 'available'){
-    const dup = checkDuplicate(entry.functionName, null);
+  // Block duplicates when claiming (new or editing to non-available)
+  if(entry.status !== 'available'){
+    const dup = checkDuplicate(entry.functionName, editingId);
     if(dup){
       const who = dup.claimedBy ? ' by ' + dup.claimedBy : '';
       alert('"' + dup.functionName + '" is already ' + dup.status.replace(/_/g, ' ') + who + '.\n\nPick a different function to work on!');
@@ -465,3 +470,4 @@ loadData();
 </script>
 </body>
 </html>
+
