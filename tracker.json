@@ -1583,11 +1583,11 @@
     {
       "id": "auto_159",
       "functionName": "screen_rectangle",
-      "description": "(add description for screen_rectangle)",
+      "description": "This pull request adds a new usage example for the `screen_rectangle` function in the Camera category.",
       "category": "Camera",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Sparsh300",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/848",
       "createdAt": "auto-scraped"
     },
     {
@@ -1733,11 +1733,11 @@
     {
       "id": "auto_174",
       "functionName": "hue_of",
-      "description": "(add description for hue_of)",
+      "description": "This pull request adds a new SplashKit usage example for the `hue_of` function in the Color category.",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "jasveena15",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/850",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-11T03:26:29.173Z"
+  "lastUpdated": "2026-09-12T03:32:08.656Z"
 }
