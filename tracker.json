@@ -1193,11 +1193,11 @@
     {
       "id": "auto_120",
       "functionName": "audio_ready",
-      "description": "(add description for audio_ready)",
+      "description": "**SplashKit Function:** `audio_ready`",
       "category": "Audio",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Nadiazahan",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/851",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-14T03:47:22.890Z"
+  "lastUpdated": "2026-09-15T03:47:58.982Z"
 }
