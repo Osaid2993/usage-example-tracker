@@ -5873,11 +5873,11 @@
     {
       "id": "auto_588",
       "functionName": "json_has_key",
-      "description": "(add description for json_has_key)",
+      "description": "**Splashkit Function:** `json_has_key`",
       "category": "JSON",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "rachelpatrao",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/853",
       "createdAt": "auto-scraped"
     },
     {
@@ -6333,11 +6333,11 @@
     {
       "id": "auto_634",
       "functionName": "message_data",
-      "description": "(add description for message_data)",
+      "description": "This pull request adds a new SplashKit usage example for the `message_data_bytes` function in the Networking category.",
       "category": "Networking",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "ekam313",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/857",
       "createdAt": "auto-scraped"
     },
     {
@@ -8213,10 +8213,10 @@
     {
       "functionName": "download_bitmap",
       "category": "Networking",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "This pull request adds a new SplashKit usage example for the `download_bitmap` function in the Networking category.",
+      "claimedBy": "ekam313",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/856"
     },
     {
       "functionName": "download_font",
@@ -8253,10 +8253,10 @@
     {
       "functionName": "http_get",
       "category": "Networking",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "This pull request adds a new SplashKit usage example for the `http_get` function in the Networking category.",
+      "claimedBy": "ekam313",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/855"
     },
     {
       "functionName": "http_post",
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-18T03:36:26.853Z"
+  "lastUpdated": "2026-09-19T03:33:41.472Z"
 }
