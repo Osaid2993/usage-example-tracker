@@ -1203,11 +1203,11 @@
     {
       "id": "auto_121",
       "functionName": "close_audio",
-      "description": "(add description for close_audio)",
+      "description": "SplashKit Function: close_audio()",
       "category": "Audio",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/871",
       "createdAt": "auto-scraped"
     },
     {
@@ -2263,11 +2263,11 @@
     {
       "id": "auto_227",
       "functionName": "color_hot_pink",
-      "description": "(add description for color_hot_pink)",
+      "description": "Splashkit Function: color_hot_pink()",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/864",
       "createdAt": "auto-scraped"
     },
     {
@@ -2523,11 +2523,11 @@
     {
       "id": "auto_253",
       "functionName": "color_maroon",
-      "description": "(add description for color_maroon)",
+      "description": "**Splashkit Function:** `color_maroon`",
       "category": "Color",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "rachelpatrao",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/869",
       "createdAt": "auto-scraped"
     },
     {
@@ -3423,11 +3423,11 @@
     {
       "id": "auto_343",
       "functionName": "mouse_up",
-      "description": "(add description for mouse_up)",
+      "description": "Usage examples for three mouse getters in the input API. `mouse_up` drives a lamp that is green while the left button is up and red while it is held. `mouse_y` drives a height gauge, with a line and b",
       "category": "Input",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "ralphweng2023",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/867",
       "createdAt": "auto-scraped"
     },
     {
@@ -3573,11 +3573,11 @@
     {
       "id": "auto_358",
       "functionName": "animation_entered_frame",
-      "description": "(add description for animation_entered_frame)",
+      "description": "Splashkit Function: animation_entered_frame",
       "category": "Animations",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/873",
       "createdAt": "auto-scraped"
     },
     {
@@ -4243,11 +4243,11 @@
     {
       "id": "auto_425",
       "functionName": "path_to_resource",
-      "description": "(add description for path_to_resource)",
+      "description": "**SplashKit Function:** `path_to_resource`",
       "category": "Resources",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "Nadiazahan",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/872",
       "createdAt": "auto-scraped"
     },
     {
@@ -5753,11 +5753,11 @@
     {
       "id": "auto_576",
       "functionName": "triangle_barycenter",
-      "description": "(add description for triangle_barycenter)",
+      "description": "This pull request adds a new SplashKit usage example for the `triangle_barycenter` function in the Geometry category.",
       "category": "Geometry",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "jasveena15",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/870",
       "createdAt": "auto-scraped"
     },
     {
@@ -7893,10 +7893,10 @@
     {
       "functionName": "point_in_window",
       "category": "Camera",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "Splashkit Function: point_in_window",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/866"
     },
     {
       "functionName": "rect_in_window",
@@ -8029,10 +8029,10 @@
     {
       "functionName": "normal",
       "category": "Geometry",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "The guides directory had two parallel sets of folders differing only in",
+      "claimedBy": "himanshigaba22",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/861"
     },
     {
       "functionName": "draw_flower",
@@ -8493,10 +8493,10 @@
     {
       "functionName": "sprite_triangle_collision",
       "category": "Physics",
-      "status": "available",
-      "description": "(add description)",
-      "claimedBy": "",
-      "prLink": ""
+      "status": "in_review",
+      "description": "Splashkit Function: sprite_triangle_collision",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/874"
     },
     {
       "functionName": "vector_from_point_to_rect",
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-20T03:49:18.608Z"
+  "lastUpdated": "2026-09-21T03:46:03.660Z"
 }
