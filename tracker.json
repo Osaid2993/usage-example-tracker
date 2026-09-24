@@ -685,9 +685,9 @@
       "functionName": "free_all_bitmaps",
       "description": "This pull request adds a new SplashKit usage example for the `free_all_conversations` function in the Generative AI category.",
       "category": "Graphics",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jasveena15",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/383",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/808",
       "createdAt": "auto-scraped"
     },
     {
@@ -965,9 +965,9 @@
       "functionName": "font_has_size",
       "description": "This pull request adds a new usage example for the `font_has_size` function.",
       "category": "Graphics",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jasveena15",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/382",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/731",
       "createdAt": "auto-scraped"
     },
     {
@@ -1195,7 +1195,7 @@
       "functionName": "audio_ready",
       "description": "**SplashKit Function:** `audio_ready`",
       "category": "Audio",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Nadiazahan",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/851",
       "createdAt": "auto-scraped"
@@ -1495,7 +1495,7 @@
       "functionName": "camera_position",
       "description": "**Splashkit Function:** `camera_position`",
       "category": "Camera",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/841",
       "createdAt": "auto-scraped"
@@ -1535,7 +1535,7 @@
       "functionName": "move_camera_by",
       "description": "**SplashKit Function:** `move_camera_by`",
       "category": "Camera",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Nadiazahan",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/823",
       "createdAt": "auto-scraped"
@@ -1545,7 +1545,7 @@
       "functionName": "move_camera_to",
       "description": "This PR adds a new `move_camera_to` usage example demonstrating how to create a camera that follows a player around a world larger than the screen.",
       "category": "Camera",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jankiluitel",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/798",
       "createdAt": "auto-scraped"
@@ -1557,7 +1557,7 @@
       "category": "Camera",
       "status": "merged",
       "claimedBy": "ekam313",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/454",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/815",
       "createdAt": "auto-scraped"
     },
     {
@@ -1595,7 +1595,7 @@
       "functionName": "set_camera_position",
       "description": "**Splashkit Function:** `set_camera_position`",
       "category": "Camera",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/801",
       "createdAt": "auto-scraped"
@@ -1683,11 +1683,11 @@
     {
       "id": "auto_169",
       "functionName": "vector_world_to_screen",
-      "description": "(add description for vector_world_to_screen)",
+      "description": "Splashkit Function: vector_world_to_screen",
       "category": "Camera",
-      "status": "available",
-      "claimedBy": "",
-      "prLink": "",
+      "status": "in_review",
+      "claimedBy": "PK70077",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/875",
       "createdAt": "auto-scraped"
     },
     {
@@ -1725,7 +1725,7 @@
       "functionName": "green_of",
       "description": "This pull request adds a new SplashKit usage example for the `green_of` function in the Color category.",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/817",
       "createdAt": "auto-scraped"
@@ -1745,7 +1745,7 @@
       "functionName": "red_of",
       "description": "This pull request adds a new SplashKit usage example for the `red_of` function in the Color category.",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/818",
       "createdAt": "auto-scraped"
@@ -1805,7 +1805,7 @@
       "functionName": "color_black",
       "description": "Adds a usage example for the `color_black` function in the color API category. The example draws an 8x8 checkerboard, using nested loops to fill every second square with `color_black()` on a white bac",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/834",
       "createdAt": "auto-scraped"
@@ -1815,7 +1815,7 @@
       "functionName": "color_blue",
       "description": "Adds a usage example for the `color_blue` function in the color API category. The example draws a simple bar chart, looping over an array of bar heights and filling each bar with `color_blue()` above ",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/835",
       "createdAt": "auto-scraped"
@@ -1825,7 +1825,7 @@
       "functionName": "color_blue_violet",
       "description": "Adds a usage example for the `color_blue_violet` function in the color API category. The example draws a bullseye of concentric rings, looping from the largest circle down to the smallest and alternat",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/836",
       "createdAt": "auto-scraped"
@@ -1835,7 +1835,7 @@
       "functionName": "color_bright_green",
       "description": "Adds a usage example for the `color_bright_green` function in the color API category. The example draws a traffic light with a black body, two dark gray lamps that are switched off, and the bottom lam",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/837",
       "createdAt": "auto-scraped"
@@ -2525,7 +2525,7 @@
       "functionName": "color_maroon",
       "description": "**Splashkit Function:** `color_maroon`",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "rachelpatrao",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/869",
       "createdAt": "auto-scraped"
@@ -3155,7 +3155,7 @@
       "functionName": "hsb_color",
       "description": "**Splashkit Function:** `hsb_color`",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/820",
       "createdAt": "auto-scraped"
@@ -3245,7 +3245,7 @@
       "functionName": "any_key_pressed",
       "description": "Added a beginner-friendly usage example for the `any_key_pressed` function in the input category.",
       "category": "Input",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/734",
       "createdAt": "auto-scraped"
@@ -3305,7 +3305,7 @@
       "functionName": "key_released",
       "description": "Adds a usage example for the key_released input function. The example opens an 800×600 window and counts how many times the Space key has been released, demonstrating that key_released fires only once",
       "category": "Input",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/733",
       "createdAt": "auto-scraped"
@@ -3735,7 +3735,7 @@
       "functionName": "create_timer",
       "description": "**SplashKit Function:** `create_timer`",
       "category": "Timers",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/782",
       "createdAt": "auto-scraped"
@@ -3845,7 +3845,7 @@
       "functionName": "timer_started",
       "description": "Adds a usage example for the timer_started function from the SplashKit Timers API. The example is a simple start/stop stopwatch that demonstrates how to create a timer, start and stop it with keypress",
       "category": "Timers",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/766",
       "createdAt": "auto-scraped"
@@ -4115,7 +4115,7 @@
       "functionName": "window_has_focus",
       "description": "**Splashkit Function:** `window_has_focus`",
       "category": "Windows",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/754",
       "createdAt": "auto-scraped"
@@ -4245,7 +4245,7 @@
       "functionName": "path_to_resource",
       "description": "**SplashKit Function:** `path_to_resource`",
       "category": "Resources",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Nadiazahan",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/872",
       "createdAt": "auto-scraped"
@@ -4375,7 +4375,7 @@
       "functionName": "move_sprite_to",
       "description": "**Splashkit Function:** `move_sprite_to`",
       "category": "Sprites",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/783",
       "createdAt": "auto-scraped"
@@ -5775,7 +5775,7 @@
       "functionName": "triangle_rectangle_intersect",
       "description": "**SplashKit Function:** `triangle_rectangle_intersect`",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jankiluitel",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/822",
       "createdAt": "auto-scraped"
@@ -5875,7 +5875,7 @@
       "functionName": "json_has_key",
       "description": "**Splashkit Function:** `json_has_key`",
       "category": "JSON",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "rachelpatrao",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/853",
       "createdAt": "auto-scraped"
@@ -6595,7 +6595,7 @@
       "functionName": "is_number",
       "description": "Adds a usage example for the `is_number` function in the utilities API category. The example checks whether various strings (`\"42\"`, `\"3.14\"`, `\"hello\"`, `\"12abc\"`) contain valid numbers and displays ",
       "category": "Utilities",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/805",
       "createdAt": "auto-scraped"
@@ -6905,7 +6905,7 @@
       "functionName": "vector_from_angle",
       "description": "**Splashkit Function:** `vector_from_angle`",
       "category": "Physics",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Osaid2993",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/796",
       "createdAt": "auto-scraped"
@@ -7395,7 +7395,7 @@
       "functionName": "set_interface_accent_color",
       "description": "This pull request adds a new SplashKit usage example for the `set_interface_element_color` function in the Interface category.",
       "category": "Interface",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/831",
       "createdAt": "auto-scraped"
@@ -7685,7 +7685,7 @@
       "functionName": "conversation_get_reply",
       "description": "Returns the full reply from a Conversation. Overloaded: can include or exclude model thoughts.",
       "category": "Generative AI",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ralphweng2023",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/750",
       "createdAt": "2026-08-05T03:42:08.664Z"
@@ -7705,7 +7705,7 @@
       "functionName": "conversation_is_replying",
       "description": "Checks if the language model is still generating a reply within a Conversation.",
       "category": "Generative AI",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jasveena15",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/789",
       "createdAt": "2026-08-05T03:42:08.664Z"
@@ -7725,7 +7725,7 @@
       "functionName": "create_conversation",
       "description": "Creates a new Conversation object. Overloaded: can use default model or a specified language_model.",
       "category": "Generative AI",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/793",
       "createdAt": "2026-08-05T03:42:08.664Z"
@@ -7775,7 +7775,7 @@
       "functionName": "square_root",
       "description": "Computes the square root of a given number.",
       "category": "Utilities",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/806",
       "createdAt": "2026-08-05T03:42:08.664Z"
@@ -7815,7 +7815,7 @@
       "functionName": "triangle_to_string",
       "description": "Converts a triangle's coordinates to a string representation.",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/747",
       "createdAt": "2026-08-05T03:42:08.664Z"
@@ -8029,7 +8029,7 @@
     {
       "functionName": "normal",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "description": "The guides directory had two parallel sets of folders differing only in",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/861"
@@ -8109,7 +8109,7 @@
     {
       "functionName": "triangle_quad_intersect",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "description": "This pull request adds a new SplashKit usage example for the `triangle_quad_intersect` function in the Geometry category.",
       "claimedBy": "jasveena15",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/826"
@@ -8117,7 +8117,7 @@
     {
       "functionName": "triangle_ray_intersection",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "description": "This pull request adds a new SplashKit usage example for the `triangle_ray_intersection` function in the Geometry category.",
       "claimedBy": "jasveena15",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/830"
@@ -8941,7 +8941,7 @@
     {
       "functionName": "sprite_add_to_velocity",
       "category": "Sprites",
-      "status": "in_review",
+      "status": "merged",
       "description": "**Splashkit Function:** `sprite_add_to_velocity`",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/844"
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-23T03:42:33.342Z"
+  "lastUpdated": "2026-09-24T03:33:45.696Z"
 }
