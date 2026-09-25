@@ -1735,7 +1735,7 @@
       "functionName": "hue_of",
       "description": "This pull request adds a new SplashKit usage example for the `hue_of` function in the Color category.",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jasveena15",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/850",
       "createdAt": "auto-scraped"
@@ -3055,7 +3055,7 @@
       "functionName": "color_tomato",
       "description": "Adds a usage example for the `color_to_string` function in the color API category. The example draws five coloured rectangles (red, green, blue, orange, purple) and displays the hex string representat",
       "category": "Color",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/787",
       "createdAt": "auto-scraped"
@@ -3385,7 +3385,7 @@
       "functionName": "mouse_down",
       "description": "**SplashKit Function:** `mouse_down`",
       "category": "Input",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Nadiazahan",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/795",
       "createdAt": "auto-scraped"
@@ -5315,7 +5315,7 @@
       "functionName": "inset_rectangle",
       "description": "**Splashkit Function:** `inset_rectangle`",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "himanshigaba22",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/833",
       "createdAt": "auto-scraped"
@@ -5755,7 +5755,7 @@
       "functionName": "triangle_barycenter",
       "description": "This pull request adds a new SplashKit usage example for the `triangle_barycenter` function in the Geometry category.",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "jasveena15",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/870",
       "createdAt": "auto-scraped"
@@ -5785,7 +5785,7 @@
       "functionName": "triangles_intersect",
       "description": "This pull request adds a new SplashKit usage example for the",
       "category": "Geometry",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/802",
       "createdAt": "auto-scraped"
@@ -6335,7 +6335,7 @@
       "functionName": "message_data",
       "description": "This pull request adds a new SplashKit usage example for the `message_data_bytes` function in the Networking category.",
       "category": "Networking",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ekam313",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/857",
       "createdAt": "auto-scraped"
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-24T03:33:45.696Z"
+  "lastUpdated": "2026-09-25T03:50:39.657Z"
 }
