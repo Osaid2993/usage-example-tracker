@@ -3415,7 +3415,7 @@
       "functionName": "mouse_shown",
       "description": "Adds a usage example for the mouse_shown function in the SplashKit input API. The example demonstrates how to check whether the mouse cursor is visible, and includes implementations in C++ (OOP and to",
       "category": "Input",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "Abod-A",
       "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/740",
       "createdAt": "auto-scraped"
@@ -3905,9 +3905,9 @@
       "functionName": "current_window",
       "description": "**Splashkit Function:** `current_window`",
       "category": "Windows",
-      "status": "in_review",
+      "status": "merged",
       "claimedBy": "ZGT23",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/634",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/775",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-09-25T03:50:39.657Z"
+  "lastUpdated": "2026-09-26T03:56:16.362Z"
 }
