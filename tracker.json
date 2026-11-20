@@ -7,7 +7,7 @@
       "category": "Graphics",
       "status": "merged",
       "claimedBy": "jankiluitel",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/677",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/226",
       "createdAt": "auto-scraped"
     },
     {
@@ -347,7 +347,7 @@
       "category": "Graphics",
       "status": "in_review",
       "claimedBy": "SimonRhook",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/597",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/365",
       "createdAt": "auto-scraped"
     },
     {
@@ -747,7 +747,7 @@
       "category": "Graphics",
       "status": "merged",
       "claimedBy": "jankiluitel",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/726",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/227",
       "createdAt": "auto-scraped"
     },
     {
@@ -1057,7 +1057,7 @@
       "category": "Graphics",
       "status": "in_review",
       "claimedBy": "CATHoDE33",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/593",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/293",
       "createdAt": "auto-scraped"
     },
     {
@@ -1067,7 +1067,7 @@
       "category": "Graphics",
       "status": "in_review",
       "claimedBy": "CATHoDE33",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/625",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/360",
       "createdAt": "auto-scraped"
     },
     {
@@ -7127,7 +7127,7 @@
       "category": "Logging",
       "status": "merged",
       "claimedBy": "anandika-nair",
-      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/478",
+      "prLink": "https://github.com/thoth-tech/splashkit.io-starlight/pull/252",
       "createdAt": "auto-scraped"
     },
     {
@@ -9203,5 +9203,5 @@
       "prLink": ""
     }
   ],
-  "lastUpdated": "2026-11-19T06:19:23.563Z"
+  "lastUpdated": "2026-11-20T06:03:35.806Z"
 }
